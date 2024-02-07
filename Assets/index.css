@@ -5,6 +5,10 @@
     scroll-behavior: smooth;
     font-family: "Kumbh Sans", sans-serif;
 }
+h2{
+    text-align: center;
+    color:#07294b;
+}
 .NavBarContainer{
     width:100%;
     display:flex;
@@ -12,16 +16,30 @@
     position: fixed;
     z-index:999;
     align-items: center;
+  
+ 
+}
+.NavBardiv{
+    
+    width:100%;
+    display:flex;
+    justify-content: center;
+    position: fixed;
+    z-index:999;
+    align-items: center;
     background-color: white;
+ 
 }
 .MobileNavBarContainer{
     display: none;
 }
 .NavBar{
-    width: 80%;
+    width: 30%;
     display:flex;
-    justify-content: space-between;
-    font-size: 1.5em;
+    justify-content: space-around;
+    margin: auto;
+    text-align: center;
+    font-size: 1.3em;
     font-weight: 600;
     cursor: pointer;
 }
@@ -40,8 +58,9 @@
     margin-right: -1.5em;
     cursor: pointer;
 }
+
 .MainLogo{
-    width:70%;
+    width:50%;
     padding-top: 5em;
    
 }
@@ -51,7 +70,8 @@
 }
 .NavLogo{
     width:3em;
-    margin-right: 3em;
+    margin-left: 3em;
+    margin-right: auto;
     margin-top:0.5em;
 }
 .Slogan{
@@ -64,7 +84,7 @@
 .HomePageDescriptionSection{
     padding: 1em;
     font-size: 2em;
-    color:#07294b;
+    color:#000;
     margin-top: 2em;
     margin-bottom: 2em;
     font-weight: 200;
@@ -72,6 +92,12 @@
 }
 .HomePageDescription>span{
     color:#92C83E;
+    font-weight: 800;
+}
+.HomePageDescriptionSection>a{
+color: #07294b;
+text-decoration: none;
+cursor: pointer;
 }
 .LearnMore{
     border-style:solid;
@@ -85,10 +111,11 @@
     margin-right: auto;
 }
 .LearnMore:hover{
-    background-color: #02305e;
+    background-color: #07294b;
     color: white;
     transition: 2s;
 }
+
 .LocationSection{
     display: flex;
     flex-direction: column;
@@ -105,7 +132,7 @@
     height:25em;
 }
 .FooterSection{
-    background-color: #02305e;
+    background-color: #07294b;
     color: white;
     display: flex;
     flex-direction: column;
@@ -129,13 +156,21 @@ margin: 0.5em;
 
 }
 .CopyRightsText{
-    font-size:1em;
+    font-size:0.8em;
+}
+.FooterLogo{
+    width:20em;
+    margin: auto;
+}
+.AboutUsSection{
+    padding-top: 3em;
 }
 @media (max-width:280px){
     .Slogan{
         font-size: 0.8em !important;
     }
 }
+
     @media (max-width:650px){
     .LocationSection>iframe{
         width: 80%;
@@ -154,7 +189,7 @@ margin: 0.5em;
     .HomePageDescriptionSection{
         padding: 1em;
         font-size: 1em;
-        color:#07294b;
+        color:#000;
         margin-top: 3em;
         margin-bottom: 3em;
         font-weight: 200;
@@ -193,7 +228,7 @@ margin: 0.5em;
     .MobileNavBarActive{
     display: none;
     flex-direction: column;
-    background-color: #02305e;
+    background-color: #07294b;
     color: white;
     padding: 1em;
     justify-content: space-between;
