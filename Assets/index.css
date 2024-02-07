@@ -162,9 +162,7 @@ margin: 0.5em;
     width:20em;
     margin: auto;
 }
-.AboutUsSection{
-    padding-top: 3em;
-}
+
 @media (max-width:280px){
     .Slogan{
         font-size: 0.8em !important;

@@ -22,6 +22,9 @@ function HomeNavFn(){
     MobileAboutNav.style.textDecoration="none";
     ServicesNav.style.textDecoration="none";
     MobileServicesNav.style.textDecoration="none";
+    MobileNavBarActive.style.display="none";
+    CloseIcon.style.display="none";
+    MenuIcon.style.display="flex";
 }
 function AboutNavFn(){
     HomeNav.style.textDecoration="none";
@@ -30,6 +33,9 @@ function AboutNavFn(){
     MobileAboutNav.style.textDecoration="underline";
     ServicesNav.style.textDecoration="none";
     MobileServicesNav.style.textDecoration="none";
+    MobileNavBarActive.style.display="none";
+    CloseIcon.style.display="none";
+    MenuIcon.style.display="flex";
 }
 function ServicesNavFn(){
     HomeNav.style.textDecoration="none";
@@ -38,11 +44,16 @@ function ServicesNavFn(){
     MobileAboutNav.style.textDecoration="none";
     ServicesNav.style.textDecoration="underline";
     MobileServicesNav.style.textDecoration="underline";
+    MobileNavBarActive.style.display="none";
+    CloseIcon.style.display="none";
+    MenuIcon.style.display="flex";
+  
 }
 function MobileNavActiveFn(){
     MobileNavBarActive.style.display="flex";
     CloseIcon.style.display="flex";
     MenuIcon.style.display="none";
+   
 }
 function MoileNavInactiveFn(){
     MobileNavBarActive.style.display="none";
