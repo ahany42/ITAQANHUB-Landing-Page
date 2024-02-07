@@ -28,7 +28,8 @@
 }
 .NavBar>a{
     text-decoration:none;
-    text-decoration-thickness:3px !important;
+    text-decoration-thickness:4px !important;
+    text-underline-offset:8px !important;
 }
 #HomeNav,#MobileHomeNav{
     text-decoration: underline;
@@ -37,6 +38,7 @@
     display: none;
     padding-top: 1em;
     margin-right: -1.5em;
+    cursor: pointer;
 }
 .MainLogo{
     width:70%;
@@ -57,12 +59,46 @@
     color:#07294b;
     font-weight:800;
     font-size: 2em;
+    font-style:italic;
+   
 }
+.HomePageDescriptionSection{
+    padding: 1em;
+    font-size: 2em;
+    color:#07294b;
+    margin-top: 2em;
+    margin-bottom: 2em;
 
+}
+.HomePageDescription>span{
+    color:#92C83E;
+}
+.LearnMore{
+    border-style:solid;
+    border-width: 3px;
+    width:6em;
+    font-size:0.5em;
+    padding:0.5em;
+    margin-top: 1em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.LearnMore:hover{
+    background-color: #02305e;
+    color: white;
+    transition: 2s;
+}
 .LocationSection{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin-top:2em;
+}
+.LocationDescription{
+    text-align: center;
+    color:rgb(46, 44, 44);
+    margin-bottom: 1em;
 }
 .LocationSection>iframe{
     width: 100%;
@@ -77,22 +113,61 @@
     font-family: Arial, Helvetica, sans-serif;
     padding-top:1em;
     padding-bottom:1em ;
-    
+}
+.SocialLinks{
+    margin-bottom: 1em;
+}
+.SocialLinks>a{
+    color:white;
+    text-decoration: none;
+    margin: 0.4em;
+    font-size: 1.2em;
     
 }
 .SocialLinks>i{
 margin: 0.5em;
-font-size: 1.5em;
+
 }
 .CopyRightsText{
     font-size:1em;
+}
+@media (max-width:280px){
+    .Slogan{
+        font-size: 0.8em !important;
+    }
 }
     @media (max-width:650px){
     .LocationSection>iframe{
         width: 80%;
         height: 15em;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 2em;
+        margin-bottom:2em;
     }
-
+    .MainSection{
+    margin-bottom: 1em;
+    }
+    .Slogan{
+        margin-top: 2em;
+    }
+    .HomePageDescriptionSection{
+        padding: 1em;
+        font-size: 1em;
+        color:#07294b;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    
+    }
+    .HomePageDescription>span{
+        font-weight:800;
+    }
+    .LocationDescription{
+        margin-top: 1em;
+    }
+.FooterSection{
+    font-size: 0.7em;
+}
 }
 @media (max-width:992px){
     .NavBarContainer{
@@ -129,6 +204,8 @@ font-size: 1.5em;
     .MobileNavBarActive>a{
         text-decoration:none;
         text-decoration-thickness:3px !important;
+        text-underline-offset:8px !important;
+        
     }
     .Slogan{
         font-size: 1em;
@@ -142,6 +219,7 @@ font-size: 1.5em;
        padding-top: 0.5em;
        margin: 0;
        margin-right: -1em;
+       cursor:pointer;
     }
     
 }

@@ -6,7 +6,6 @@ var MobileAboutNav=document.getElementById("MobileAboutNav");
 var MobileServicesNav=document.getElementById("MobileServicesNav");
 var MenuIcon=document.getElementById("MenuIcon");
 var MobileNavBarActive=document.getElementById("MobileNavBarActive");
-var MenuBarInactive=document.getElementById("MenuBarInactive");
 var CloseIcon=document.getElementById("CloseIcon");
 HomeNav.addEventListener('click',HomeNavFn);
 MobileHomeNav.addEventListener('click',HomeNavFn);
@@ -15,7 +14,6 @@ MobileAboutNav.addEventListener('click',AboutNavFn);
 ServicesNav.addEventListener('click',ServicesNavFn);
 MobileServicesNav.addEventListener('click',ServicesNavFn);
 MenuIcon.addEventListener('click',MobileNavActiveFn);
-MenuBarInactive.addEventListener('click',MoileNavInactiveFn);
 CloseIcon.addEventListener('click',MoileNavInactiveFn);
 function HomeNavFn(){
     HomeNav.style.textDecoration="underline";
