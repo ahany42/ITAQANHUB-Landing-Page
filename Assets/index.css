@@ -21,7 +21,6 @@
     width: 80%;
     display:flex;
     justify-content: space-between;
-    color: black;
     font-size: 1.5em;
     font-weight: 600;
     cursor: pointer;
@@ -30,9 +29,10 @@
     text-decoration:none;
     text-decoration-thickness:4px !important;
     text-underline-offset:8px !important;
+    color: black;
 }
-#HomeNav,#MobileHomeNav{
-    text-decoration: underline;
+.SelectedNavBar{
+    text-decoration: underline  !important;
 }
 #CloseIcon{
     display: none;
@@ -59,7 +59,6 @@
     color:#07294b;
     font-weight:800;
     font-size: 2em;
-    font-style:italic;
    
 }
 .HomePageDescriptionSection{
@@ -68,6 +67,7 @@
     color:#07294b;
     margin-top: 2em;
     margin-bottom: 2em;
+    font-weight: 200;
 
 }
 .HomePageDescription>span{
@@ -157,6 +157,7 @@ margin: 0.5em;
         color:#07294b;
         margin-top: 3em;
         margin-bottom: 3em;
+        font-weight: 200;
     
     }
     .HomePageDescription>span{
@@ -202,6 +203,7 @@ margin: 0.5em;
     cursor:pointer;
     }
     .MobileNavBarActive>a{
+        color: white;
         text-decoration:none;
         text-decoration-thickness:3px !important;
         text-underline-offset:8px !important;
