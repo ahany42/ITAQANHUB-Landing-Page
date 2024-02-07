@@ -2,20 +2,41 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 .NavBarContainer{
     width:100%;
     display:flex;
     justify-content: center;
-
+    position: fixed;
+    z-index:999;
+    align-items: center;
 }
 .NavBar{
-    width: 30%;
+    width: 80%;
     display:flex;
     justify-content: space-between;
     color: black;
     font-size: 1.5em;
     font-family: "Kumbh Sans", sans-serif;
     font-weight: 600;
-    
+    cursor: pointer;
+
+}
+#HomeNav{
+    text-decoration: underline;
+
+}
+.MainLogo{
+    width:70%;
+    padding-top: 5em;
+   
+}
+.LogoContainer{
+    display: flex;
+    justify-content: center;
+}
+.NavLogo{
+    width:3em;
+    margin-right: 3em;
 }
