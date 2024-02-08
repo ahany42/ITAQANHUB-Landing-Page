@@ -83,13 +83,15 @@ h2{
 }
 .HomePageDescriptionSection{
     padding: 1em;
-    font-size: 2em;
+    font-size: 1.8em;
     color:#000;
     margin-top: 2em;
     margin-bottom: 2em;
     font-weight: 200;
+    text-align: justify;
 
 }
+
 .HomePageDescription>span{
     color:#92C83E;
     font-weight: 800;
@@ -98,6 +100,15 @@ h2{
 color: #07294b;
 text-decoration: none;
 cursor: pointer;
+}
+.DestktopsDescriptionContainer{
+    width:fit-content;
+    height:5em;
+    margin: auto;
+    
+}
+.MobileDescriptionContainer{
+    display: none;
 }
 .LearnMore{
     border-style:solid;
@@ -167,8 +178,21 @@ margin: 0.5em;
     .Slogan{
         font-size: 0.8em !important;
     }
-}
+    .HomePageDescriptionSection{
+        padding: 0.5em !important;
+        font-size: 0.9em !important; 
+    }
 
+}
+@media (max-width:400px){
+    .HomePageDescriptionSection{
+       
+        font-size: 1.2em ;
+        font-weight: 200 !important;
+        
+    
+    }
+}
     @media (max-width:650px){
     .LocationSection>iframe{
         width: 80%;
@@ -196,6 +220,7 @@ margin: 0.5em;
     .HomePageDescription>span{
         font-weight:800;
     }
+  
     .LocationDescription{
         margin-top: 1em;
     }
@@ -244,6 +269,13 @@ margin: 0.5em;
     }
     .Slogan{
         font-size: 1em;
+    }
+    .DestktopsDescriptionContainer{
+        display: none;
+    }
+    .MobileDescriptionContainer{
+        display: flex;
+       
     }
     .NavLogo{
         width:1.5em;
