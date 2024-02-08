@@ -13,7 +13,7 @@
 .AboutParagraph{
     margin-top: 2em;
     padding: 1em;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1em;
 }
 .AboutParagraph>span{
@@ -23,4 +23,9 @@
 }
 #About4thParagraph{
     margin-bottom: 2.5em;
+}
+@media (max-width:650px){
+    .AboutParagraph{
+    font-weight:400;
+    }
 }

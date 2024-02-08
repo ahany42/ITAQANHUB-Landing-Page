@@ -90,7 +90,7 @@ h2{
 .Slogan{
     text-align: center;
     color:#07294b;
-    font-weight:800;
+    font-weight:600;
     font-size: 2em;
    
    
@@ -113,7 +113,7 @@ h2{
 .HomePageDescription>span{
     color:#92C83E;
     font-weight: 600;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 .HomePageDescriptionSection>a{
 color: #07294b;
@@ -228,6 +228,7 @@ margin: 0.5em;
 }
 .CopyRightsText{
     font-size:0.8em;
+    font-weight: 600;
 }
 .FooterLogo{
     width:20em;
@@ -291,7 +292,7 @@ margin: 0.5em;
     
     }
     .HomePageDescription>span{
-        font-weight:600;
+        font-weight:400;
         font-size: 1.2em;
     }
      .SubmitButton{
@@ -353,6 +354,7 @@ margin: 0.5em;
     }
     .Slogan{
         font-size: 1.5em;
+        font-weight: 600;
     }
     .DestktopsDescriptionContainer{
         display: none;
