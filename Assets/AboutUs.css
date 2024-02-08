@@ -24,6 +24,9 @@
 #About4thParagraph{
     margin-bottom: 2.5em;
 }
+.Title{
+    margin-top: 0em ;
+}
 @media (max-width:650px){
     .AboutParagraph{
     font-weight:400;

@@ -7,14 +7,23 @@
     font-family: 'Poppins', sans-serif;
    
 }
-h2{
+hr{
+    width:25%;
+    margin: auto;
+}
+.Title{
     text-align: center;
     color:#07294b;
     font-family: "kumbh Sans";
-
+    margin-top: 3em;
+    margin-bottom:1em;
     
 }
-
+.DropUsaLine{
+    text-align: center;
+    color: #07294b;
+    margin-bottom: 1em;
+}
 .NavBarContainer{
     width:100%;
     display:flex;
@@ -55,7 +64,7 @@ h2{
     text-underline-offset:8px !important;
     color: black;
 }
-#HomeNav:hover,#ServicesNav:hover,#AboutNav:hover{
+#HomeNav:hover,#ServicesNav:hover,#AboutNav:hover,#ContactNav:hover{
 
      text-decoration: underline;
      transition: 3s ease-in;     
@@ -89,11 +98,14 @@ h2{
 }
 .Slogan{
     text-align: center;
-    color:#07294b;
+    color: #92C83E;
     font-weight:600;
     font-size: 2em;
    
    
+}
+.Slogan>span{
+    color:#07294b;
 }
 .HomePageDescriptionSection{
     padding: 1em;
@@ -178,6 +190,7 @@ input{
     font-weight: 600 ;
     padding:0.5em;
     margin-top: 1em;
+    margin-bottom: 3em;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -198,6 +211,7 @@ input{
     text-align: center;
     color:rgb(46, 44, 44);
     margin-bottom: 1em;
+    
 }
 .LocationSection>iframe{
     width: 100%;
@@ -339,6 +353,7 @@ margin: 0.5em;
     background-color: #07294b;
     color: white;
     padding: 1em;
+    padding-bottom: 2em;
     justify-content: space-between;
     z-index: 999;
     height: 5em;
