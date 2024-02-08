@@ -15,6 +15,7 @@ ServicesNav.addEventListener('click',ServicesNavFn);
 MobileServicesNav.addEventListener('click',ServicesNavFn);
 MenuIcon.addEventListener('click',MobileNavActiveFn);
 CloseIcon.addEventListener('click',MoileNavInactiveFn);
+window.addEventListener('scroll',MoileNavInactiveFn);
 function HomeNavFn(){
     HomeNav.style.textDecoration="underline";
     MobileHomeNav.style.textDecoration="underline";
