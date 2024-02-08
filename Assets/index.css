@@ -69,9 +69,12 @@ h2{
     cursor: pointer;
 }
 
-.MainLogo{
+.MainLogo,.DarkMainLogo{
     width:50%;
     padding-top: 5em; 
+}
+.DarkMainLogo{
+    display:none;
 }
 .LogoContainer{
     display: flex;
@@ -377,11 +380,16 @@ margin: 0.5em;
     
 }
 @media (prefers-color-scheme: dark) {
+    .DarkMainLogo{
+    display: flex !important;
+    }
    .MainLogo{
-    display: none;
+    display: none !important;
    }
    .Slogan{
-    color:#92C83E;
+    color:#92C83E !important;
    }
-   
+   h2{
+    color:#92C83E !important;
+   }
 } 
