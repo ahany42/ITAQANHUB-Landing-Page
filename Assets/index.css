@@ -382,20 +382,3 @@ margin: 0.5em;
     }
     
 }
-@media (prefers-color-scheme: dark) {
-    .DarkMainLogo{
-    display: flex !important;
-    }
-   .MainLogo{
-    display: none !important;
-   }
-   .Slogan{
-    color:#92C83E !important;
-   }
-   h2{
-    color:#92C83E !important;
-   }
-   .LogoContainer{
-    background-color: #000;
-   }
-} 
