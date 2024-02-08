@@ -70,19 +70,16 @@ h2{
     cursor: pointer;
 }
 
-.MainLogo,.DarkMainLogo{
+.MainLogo{
     width:50%;
     padding-top: 5em; 
     
 }
-.DarkMainLogo{
-    display:none;
-}
+
 .LogoContainer{
     display: flex;
     justify-content: center;
-    
-   
+
 }
 .NavLogo{
     width:3em;
