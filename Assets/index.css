@@ -110,23 +110,61 @@ cursor: pointer;
 .MobileDescriptionContainer{
     display: none;
 }
-.LearnMore{
+#LearnMore{
+   display: flex;
+   justify-content: center;
+   margin-bottom: 3em;
+   margin-top: -4em;
+}
+.ContactForm{
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    margin: auto;
+}
+label{
+    color: #000000;
+    font-weight: 600;
+
+    
+}
+input{
+    height:5em;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    border-color: #07294b;
+    border-width: 2px;
+    border-style: solid;
+    border-radius:0.5em;
+    padding-left:0.5em;
+    color: #000000;
+    font-weight: 600;
+}
+::placeholder{
+    padding-left: 0.5em;
+    color: #000;
+    font-weight: 600;
+}
+.SubmitButton{
     border-style:solid;
-    border-width: 3px;
-    width:6em;
-    font-size:0.5em;
+    border-width: 2px;
+    border-color:#07294b;
+    width:10em;
+    height: 3em;
+    font-size:1em ;
+    font-weight: 600 ;
     padding:0.5em;
     margin-top: 1em;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif ;
 }
-.LearnMore:hover{
+.SubmitButton:hover{
     background-color: #07294b;
     color: white;
-    transition: 2s;
+    transition:2s;
 }
-
 .LocationSection{
     display: flex;
     flex-direction: column;
@@ -220,7 +258,14 @@ margin: 0.5em;
     .HomePageDescription>span{
         font-weight:800;
     }
-  
+     .SubmitButton{
+        width: 8em;
+        font-size: 0.8em;
+        margin-top: 0em !important;
+     }
+     #LearnMore{
+        margin-top: -1em;
+     }
     .LocationDescription{
         margin-top: 1em;
     }
@@ -277,6 +322,11 @@ margin: 0.5em;
         display: flex;
        
     }
+    .ContactForm{
+        width: 70%;
+        
+    }
+    
     .NavLogo{
         width:1.5em;
         margin-left: 1em;
