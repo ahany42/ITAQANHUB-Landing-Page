@@ -54,6 +54,11 @@ h2{
     text-underline-offset:8px !important;
     color: black;
 }
+#HomeNav:hover,#ServicesNav:hover,#AboutNav:hover{
+
+     text-decoration: underline;
+     transition: 3s ease-in;     
+}
 .SelectedNavBar{
     text-decoration: underline  !important;
 }
@@ -371,3 +376,8 @@ margin: 0.5em;
     }
     
 }
+@media (prefers-color-scheme: dark) {
+   .MainLogo{
+    filter: invert(0);
+   }
+} 
