@@ -13,6 +13,7 @@ h2{
 
     
 }
+
 .NavBarContainer{
     width:100%;
     display:flex;
@@ -129,7 +130,7 @@ cursor: pointer;
 .ContactForm{
     display: flex;
     flex-direction: column;
-    width:50%;
+    width:50%  !important;
     margin: auto;
 }
 label{
@@ -149,6 +150,7 @@ input{
     padding-left:0.5em;
     color: #000000;
     font-weight: 600;
+    width: 100%;
 }
 ::placeholder{
     padding-left: 0.5em;
@@ -158,7 +160,7 @@ input{
 .LearnMoreButton{
     text-decoration: none;
 }
-.SubmitButton{
+.SubmitButton,Button{
     border-style:solid;
     border-width: 2px;
     border-color:#07294b;
@@ -331,14 +333,14 @@ margin: 0.5em;
     justify-content: space-between;
     z-index: 999;
     height: 5em;
-    font-weight: 600;
+    font-weight: 400;
     cursor:pointer;
     }
     .MobileNavBarActive>a{
         color: white;
         text-decoration:none;
-        text-decoration-thickness:3px !important;
-        text-underline-offset:8px !important;
+        text-decoration-thickness:2px !important;
+        text-underline-offset:5px !important;
         
     }
     .Slogan{
