@@ -71,12 +71,12 @@ h2{
 
 .MainLogo{
     width:50%;
-    padding-top: 5em;
-   
+    padding-top: 5em; 
 }
 .LogoContainer{
     display: flex;
     justify-content: center;
+   
 }
 .NavLogo{
     width:3em;
@@ -378,6 +378,10 @@ margin: 0.5em;
 }
 @media (prefers-color-scheme: dark) {
    .MainLogo{
-    filter: invert(0);
+    display: none;
    }
+   .Slogan{
+    color:#92C83E;
+   }
+   
 } 
