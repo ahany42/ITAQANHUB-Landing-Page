@@ -5,6 +5,7 @@
     padding: 0;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
+   
 }
 h2{
     text-align: center;
@@ -72,6 +73,7 @@ h2{
 .MainLogo,.DarkMainLogo{
     width:50%;
     padding-top: 5em; 
+    
 }
 .DarkMainLogo{
     display:none;
@@ -79,6 +81,7 @@ h2{
 .LogoContainer{
     display: flex;
     justify-content: center;
+    
    
 }
 .NavLogo{
@@ -391,5 +394,8 @@ margin: 0.5em;
    }
    h2{
     color:#92C83E !important;
+   }
+   .LogoContainer{
+    background-color: #000;
    }
 } 
