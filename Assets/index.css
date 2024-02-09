@@ -255,10 +255,14 @@ margin: 0.5em;
     }
     .HomePageDescriptionSection{
         padding: 0.5em !important;
-        font-size: 0.9em !important; 
+        font-size: 0.75em !important; 
     }
     .LocationDescription{
-        font-size: 0.6em;
+        font-size: 0.5em  !important;
+    
+    }
+    ::placeholder{
+        font-size: 0.8em;
     }
 
 }
@@ -280,6 +284,9 @@ margin: 0.5em;
    
 }
     @media (max-width:650px){
+        hr{
+            width:70%;
+        }
     .LocationSection>iframe{
         width: 80%;
         height: 15em;
@@ -322,6 +329,7 @@ margin: 0.5em;
     }
     .LocationDescription{
         margin-top: 1em;
+        font-size: 0.6em;
     }
 .FooterSection{
     font-size: 0.7em;
@@ -395,4 +403,9 @@ margin: 0.5em;
        cursor:pointer;
     }
     
+}
+@media (min-width:993px) and (max-width:1280px){
+    .NavBar{
+        width:50%;
+    }
 }
