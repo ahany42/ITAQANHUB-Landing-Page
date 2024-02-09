@@ -165,16 +165,22 @@ input{
     margin-top: 0.5em;
     margin-bottom: 1em;
     border-color: #07294b;
-    border-width: 2px;
+    border-width: 3px;
     border-style: solid;
-    border-radius:0.5em;
-    padding-left:0.5em;
+    border-radius:1.5em;
+    padding-left:1em;
     color: #000000;
     font-weight: 600;
     width: 100%;
 }
+input:focus::placeholder {
+color: white;
+  } 
+ input:focus>label{
+color: aqua;
+ }
 ::placeholder{
-    padding-left: 0.5em;
+    padding-left: 0em;
     color: #000;
     font-weight: 600;
 }
@@ -403,7 +409,7 @@ margin: 0.5em;
     }
     
 }
-@media (min-width:993px) and (max-width:1280px){
+@media (min-width:993px) and (max-width:1800px){
     .NavBar{
         width:50%;
     }
