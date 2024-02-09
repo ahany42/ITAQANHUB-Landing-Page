@@ -9,14 +9,16 @@
 }
 hr{
     width:25%;
-    margin: auto;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 .Title{
     text-align: center;
     color:#07294b;
     font-family: "kumbh Sans";
-    margin-top: 3em;
-    margin-bottom:1em;
+    margin-top: 0em ;
     
 }
 .DropUsaLine{
@@ -64,7 +66,7 @@ hr{
     text-underline-offset:8px !important;
     color: black;
 }
-#HomeNav:hover,#ServicesNav:hover,#AboutNav:hover,#ContactNav:hover{
+#HomeNav:hover,#ServicesNav:hover,#AboutNav:hover,#ContactNav:hover,#JobsNav:hover{
 
      text-decoration: underline;
      transition: 3s ease-in;     
@@ -190,7 +192,6 @@ input{
     font-weight: 600 ;
     padding:0.5em;
     margin-top: 1em;
-    margin-bottom: 3em;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -205,13 +206,12 @@ input{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top:2em;
+ 
 }
 .LocationDescription{
     text-align: center;
     color:rgb(46, 44, 44);
     margin-bottom: 1em;
-    
 }
 .LocationSection>iframe{
     width: 100%;
@@ -309,12 +309,12 @@ margin: 0.5em;
         color:#000;
         margin-top: 3em;
         margin-bottom: 3em;
-        font-weight: 200;
+        font-weight: 400;
     
     }
     .HomePageDescription>span{
-        font-weight:400;
-        font-size: 1.2em;
+        font-weight:600;
+        font-size: 1em;
     }
      .SubmitButton{
         width: 8em;
@@ -361,7 +361,7 @@ margin: 0.5em;
     background-color: #07294b;
     color: white;
     padding: 1em;
-    padding-bottom: 2em;
+    padding-bottom: 3em;
     justify-content: space-between;
     z-index: 999;
     height: 5em;

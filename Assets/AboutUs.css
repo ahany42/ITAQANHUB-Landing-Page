@@ -19,16 +19,14 @@
 .AboutParagraph>span{
     color:#92C83E;
     font-weight: 600 ;
-    font-size: 1.2em ;
+    font-size: 1em ;
 }
 #About4thParagraph{
     margin-bottom: 2.5em;
 }
-.Title{
-    margin-top: 0em ;
-}
+
 @media (max-width:650px){
     .AboutParagraph{
-    font-weight:400;
+    font-weight:400 ;
     }
 }
