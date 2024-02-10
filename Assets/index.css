@@ -100,14 +100,14 @@ hr{
 }
 .Slogan{
     text-align: center;
-    color: #92C83E;
-    font-weight:600;
+    color:#07294b;
+    font-weight:400;
     font-size: 2em;
    
    
 }
 .Slogan>span{
-    color:#07294b;
+    font-weight:600;
 }
 .HomePageDescriptionSection{
     padding: 1em;
@@ -184,6 +184,9 @@ color: aqua;
     color: #000;
     font-weight: 600;
 }
+label>span{
+    color: rgb(43, 43, 43);
+}
 .LearnMoreButton{
     text-decoration: none;
 }
@@ -256,7 +259,8 @@ margin: 0.5em;
 
 @media (max-width:280px){
     .Slogan{
-        font-size: 0.8em !important;
+        font-size: 1em !important;
+        padding: 0.2em !important;
     }
     .HomePageDescriptionSection{
         padding: 0.5em !important;
@@ -271,13 +275,8 @@ margin: 0.5em;
     }
 
 }
-@media (min-width:300px) and (max-width:375px){
-.Slogan{
-    font-weight: 600;
-    padding: 0.3em !important;
-}
 
-}
+
 @media (max-width:400px){
     .HomePageDescriptionSection{
        
@@ -305,7 +304,7 @@ margin: 0.5em;
     }
     .Slogan{
         margin-top: 2em;
-        font-size:1em !important;
+        font-size:1.5em;
         padding: 0.5em;
     }
     .HomePageDescriptionSection{
@@ -382,6 +381,9 @@ margin: 0.5em;
     }
     .Slogan{
         font-size: 1.5em;
+        font-weight: 400;
+    }
+    .Slogan>span{
         font-weight: 600;
     }
     .DestktopsDescriptionContainer{

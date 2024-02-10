@@ -64,16 +64,16 @@
   action="https://formspree.io/f/xeqyadll"
   method="POST"
 >
-<label for="Name" name="Name">Name<br>
-    <input type="Text" name="Name" placeholder="Your Name Goes Here..."  required >
+<label for="Name" name="Name" id="NameField">Name <span id="NameAsterik">*</span><br>
+    <input type="Text" name="Name" placeholder="Your Name Goes Here..."  required>
 </label>
-<label for="Email" name="Email">Email<br>
+<label for="Email" name="Email" id="EmailField">Email <span id="EmailAsterik">*</span><br>
 <input type="email" name="email" placeholder="Your Email Goes Here..." required>
 </label>
-<label for="ContactMessage" name="Message">Your Message<br>
+<label for="ContactMessage" name="Message" id="MessageAsterik" id="MessageField">Message <span>*</span><br>
 <input type="text" name="message"  placeholder="Your text Goes Here..." required>
 </label>
-<button type="submit" class="SubmitButton">Send</button>
+<button type="submit" class="SubmitButton" id="SubmitButton">Send</button>
 </form>
 </section>
 <hr>
