@@ -189,6 +189,7 @@ label>span{
 }
 .LearnMoreButton{
     text-decoration: none;
+    border: none;
 }
 .SubmitButton,Button{
     border-style:solid;
