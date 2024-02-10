@@ -368,12 +368,13 @@ margin: 0.5em;
     padding-bottom: 3em;
     justify-content: space-between;
     z-index: 999;
-    height: 5em;
+    height: 6em;
     font-weight: 400;
     cursor:pointer;
     }
     .MobileNavBarActive>a{
         color: white;
+        margin-bottom: 0.2em;
         text-decoration:none;
         text-decoration-thickness:2px !important;
         text-underline-offset:5px !important;
