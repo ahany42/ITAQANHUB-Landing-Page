@@ -7,6 +7,7 @@ var MobileServicesNav=document.getElementById("MobileServicesNav");
 var MenuIcon=document.getElementById("MenuIcon");
 var MobileNavBarActive=document.getElementById("MobileNavBarActive");
 var CloseIcon=document.getElementById("CloseIcon");
+var SubmitButton=document.getElementById("SubmitButton");
 HomeNav.addEventListener('click',HomeNavFn);
 MobileHomeNav.addEventListener('click',HomeNavFn);
 AboutNav.addEventListener('click',AboutNavFn);
@@ -16,6 +17,7 @@ MobileServicesNav.addEventListener('click',ServicesNavFn);
 MenuIcon.addEventListener('click',MobileNavActiveFn);
 CloseIcon.addEventListener('click',MoileNavInactiveFn);
 window.addEventListener('scroll',MoileNavInactiveFn);
+SubmitButton.addEventListener('click',FormValidationFn);
 function HomeNavFn(){
     HomeNav.style.textDecoration="underline";
     MobileHomeNav.style.textDecoration="underline";
@@ -60,4 +62,10 @@ function MoileNavInactiveFn(){
     MobileNavBarActive.style.display="none";
     CloseIcon.style.display="none";
     MenuIcon.style.display="flex";
+}
+function FormValidationFn(event){
+    if(document.getElementById(NameField).value==null || document.getElementById(EmailField).value==null || document.getElementById(MessageField).value==null )
+        event.preventDefault();
+    
+
 }

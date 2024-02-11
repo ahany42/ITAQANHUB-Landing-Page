@@ -257,7 +257,86 @@ margin: 0.5em;
     width:20em;
     margin: auto;
 }
-
+.HomeServicesPreview{
+    display: block;
+    justify-content: center;
+}
+/* Our Services Home Screen Card */
+.card p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #000;
+  }
+  
+  .card p.small {
+    font-size: 14px;
+  }
+  
+  .go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background-color: #92C83E;
+    border-radius: 0 4px 0 32px;
+  }
+  
+  .go-arrow {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: white;
+  }
+  
+  .card1 {
+    display: block;
+    position: relative;
+    max-width: 262px;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    padding: 32px 24px;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+  }
+  
+  .card1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #92C83E;
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.5s ease-out;
+  }
+  
+  .card1:hover:before {
+    transform: scale(21);
+  }
+  
+  .card1:hover p {
+    transition: all 1s ease-out;
+   
+  }
+  
+  .card1:hover h3 {
+    transition: all 0.2s ease-out;
+   
+  }
+  
 @media (max-width:280px){
     .Slogan{
         font-size: 1em !important;
@@ -418,3 +497,5 @@ margin: 0.5em;
         width:50%;
     }
 }
+
+  
