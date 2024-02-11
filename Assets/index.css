@@ -258,8 +258,10 @@ margin: 0.5em;
     margin: auto;
 }
 .HomeServicesPreview{
-    display: block;
+    display: flex;
     justify-content: center;
+    display: flex;  
+    flex-wrap: wrap;
 }
 /* Our Services Home Screen Card */
 .card p {
@@ -300,7 +302,8 @@ margin: 0.5em;
     background-color: #f2f8f9;
     border-radius: 4px;
     padding: 32px 24px;
-    margin: auto;
+    margin-left: 1em;
+    margin-right: 1em;
     margin-top: 1em;
     margin-bottom: 1em;
     text-decoration: none;
