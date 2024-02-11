@@ -64,8 +64,8 @@
 <section class="HomeServicesPreview">
 <div class="card">
   <a class="card1" href="Services.html">
-   <p>This is heading</p>
-   <p class="small">Card description with lots of great facts and interesting details.</p>
+   <p>IT Training Services</p>
+   <p class="small">Card description with lots of great facts and interesting details.<br><br><span>Learn More</span></p>
    <div class="go-corner" >
      <div class="go-arrow">
       <i class="fa-solid fa-circle-info"></i>
@@ -75,31 +75,9 @@
 </div>
 <div class="card">
   <a class="card1" href="Services.html">
-   <p>This is heading</p>
-   <p class="small">Card description with lots of great facts and interesting details.</p>
+   <p>Professional Services</p>
+   <p class="small">Card description with lots of great facts and interesting details.<br><br><span>Learn More</span></p>
    <div class="go-corner">
-     <div class="go-arrow">
-      <i class="fa-solid fa-circle-info"></i>
-     </div>
-   </div>
- </a>
-</div>
-<div class="card">
-  <a class="card1" href="Services.html">
-   <p>This is heading</p>
-   <p class="small">Card description with lots of great facts and interesting details.</p>
-   <div class="go-corner">
-     <div class="go-arrow">
-      <i class="fa-solid fa-circle-info"></i>
-     </div>
-   </div>
- </a>
-</div>
-<div class="card">
-  <a class="card1" href="Services.html">
-   <p>This is heading</p>
-   <p class="small">Card description with lots of great facts and interesting details.</p>
-   <div class="go-corner" >
      <div class="go-arrow">
       <i class="fa-solid fa-circle-info"></i>
      </div>
@@ -159,45 +137,5 @@ window.onbeforeunload = () => {
       form.reset();
     }
 }
-</script>
-<script>
-    let deferredPrompt;
-  
-    window.addEventListener('beforeinstallprompt', (event) => {
-      // Prevent the default prompt
-      event.preventDefault();
-      // Save the event for later use
-      deferredPrompt = event;
-      // Display your custom "Install App" button
-      showInstallButton();
-    });
-  
-    function showInstallButton() {
-      const installButton = document.getElementById('installButton');
-      installButton.style.display = 'block';
-    }
-  
-    function installApp() {
-      // Trigger the "Install App" prompt when your custom button is clicked
-      if (deferredPrompt) {
-        deferredPrompt.prompt();
-        deferredPrompt.userChoice.then((choiceResult) => {
-          if (choiceResult.outcome === 'accepted') {
-            console.log('User accepted the install prompt');
-          } else {
-            console.log('User dismissed the install prompt');
-          }
-          // Clear the deferredPrompt so it can't be triggered again
-          deferredPrompt = null;
-        });
-      }
-    }
-  </script>
-  <script>
-    window.addEventListener('appinstalled', (event) => {
-      console.log('App was installed:', event);
-      // Display a thank you message or handle other post-installation logic
-    });
-  </script>
-  
+</script> 
 </html>
