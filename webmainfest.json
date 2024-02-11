@@ -1,0 +1,22 @@
+{
+    "name": "Itqan Hub",
+    "short_name": "Itqan Hub",
+    "display": "standalone",
+    "start_url": ".",
+    "background_color": "#000000",
+    "theme_color":"#ffffff",
+    "description": "Example web app.",
+    "icons": [{
+      "src": "https://www.example.com/test/images/icon_512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }],
+    "share_target": {
+      "action":"/new-topic",
+      "method":"GET",
+      "enctype":"application/x-www-form-urlencoded",
+      "params": {
+        "title":"title",
+        "text":"body"}
+    }
+  }
