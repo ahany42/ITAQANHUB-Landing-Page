@@ -2,12 +2,12 @@
     "name": "Itqan Hub",
     "short_name": "Itqan Hub",
     "display": "standalone",
-    "start_url": ".",
+    "start_url": "index.html",
     "background_color": "#000000",
     "theme_color":"#ffffff",
-    "description": "Example web app.",
+    "description": "Itqan Hub web app.",
     "icons": [{
-      "src": "https://www.example.com/test/images/icon_512.png",
+      "src": "Assets/ItqanHubEmblem1.png",
       "sizes": "512x512",
       "type": "image/png"
     }],
