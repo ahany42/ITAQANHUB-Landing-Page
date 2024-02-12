@@ -64,7 +64,7 @@ function MoileNavInactiveFn(){
     MenuIcon.style.display="flex";
 }
 function FormValidationFn(event){
-    if(document.getElementById(NameField).value==null || document.getElementById(EmailField).value==null || document.getElementById(MessageField).value==null )
+    if(document.getElementById(Name).value==null || document.getElementById(email).value==null || document.getElementById(ContactMessage).value==null )
         event.preventDefault();
     
 

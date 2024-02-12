@@ -65,7 +65,9 @@
 <div class="card">
   <a class="card1" href="Services.html">
    <p>IT Training Services</p>
-   <p class="small">Card description with lots of great facts and interesting details.<br><br><span>Learn More</span></p>
+   <hr class="ServicesPreviewLine">
+   <p class="small">Offering diverse IT training services, covering product training, knowledge transfer, vendor accreditations, and sales trainings for channel empowerment.
+    </p>
    <div class="go-corner" >
      <div class="go-arrow">
       <i class="fa-solid fa-circle-info"></i>
@@ -76,7 +78,8 @@
 <div class="card" id="ContactUsNavigation" >
   <a class="card1" href="Services.html">
    <p>Professional Services</p>
-   <p class="small">Card description with lots of great facts and interesting details.<br><br><span>Learn More</span></p>
+   <hr class="ServicesPreviewLine">
+   <p class="small">Our professional services encompass proof of concept (POC) and labs, consultancy, solution implementation and enablement, as well as support services</p>
    <div class="go-corner">
      <div class="go-arrow">
       <i class="fa-solid fa-circle-info"></i>
@@ -85,22 +88,23 @@
  </a>
 </div>
 </section>
-<hr >
-<section >
+<hr>
+
+<section>
     <h2  class="Title" >CONTACT US</h2>
     <h4 class="DropUsaLine">Drop Us A Line!</h4>
     <form  class="ContactForm"
   action="https://formspree.io/f/xeqyadll"
   method="POST"
 >
-<label for="Name" name="Name" id="NameField">Name <span id="NameAsterik">*</span><br>
-    <input type="Text" name="Name" placeholder="Your Name Goes Here..."  required>
+<label for="Name" name="Name" >Name <span id="NameAsterik">*</span><br>
+    <input type="Text" name="Name" id="Name" placeholder="Your Name Goes Here..."  required>
 </label>
-<label for="email" name="Email" id="EmailField">Email <span id="EmailAsterik">*</span><br>
-<input type="email" name="email" placeholder="Your Email Goes Here..." required>
+<label  for="email" name="Email">Email <span id="EmailAsterik">*</span><br>
+<input type="email" name="email" id="email"placeholder="Your Email Goes Here..." required>
 </label>
-<label for="ContactMessage" name="Message" id="MessageField">Message <span>*</span><br>
-<input type="text" name="message"  placeholder="Your text Goes Here..." required>
+<label for="ContactMessage" name="Message">Message <span>*</span><br>
+<input type="text" name="message" id="ContactMessage" placeholder="Your text Goes Here..." required>
 </label>
 <button type="submit" class="SubmitButton" id="SubmitButton">Send</button>
 </form>
@@ -137,5 +141,6 @@ window.onbeforeunload = () => {
       form.reset();
     }
 }
+
 </script> 
 </html>
