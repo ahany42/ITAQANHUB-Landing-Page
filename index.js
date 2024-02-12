@@ -17,7 +17,6 @@ MobileServicesNav.addEventListener('click',ServicesNavFn);
 MenuIcon.addEventListener('click',MobileNavActiveFn);
 CloseIcon.addEventListener('click',MoileNavInactiveFn);
 window.addEventListener('scroll',MoileNavInactiveFn);
-SubmitButton.addEventListener('click',FormValidationFn);
 function HomeNavFn(){
     HomeNav.style.textDecoration="underline";
     MobileHomeNav.style.textDecoration="underline";
@@ -62,10 +61,4 @@ function MoileNavInactiveFn(){
     MobileNavBarActive.style.display="none";
     CloseIcon.style.display="none";
     MenuIcon.style.display="flex";
-}
-function FormValidationFn(event){
-    if(document.getElementById(Name).value==null || document.getElementById(email).value==null || document.getElementById(ContactMessage).value==null )
-        event.preventDefault();
-    
-
 }

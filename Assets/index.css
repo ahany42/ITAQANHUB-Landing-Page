@@ -210,6 +210,7 @@ label>span{
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
+    background-color:white;
     
 }
 .SubmitButton:hover{
