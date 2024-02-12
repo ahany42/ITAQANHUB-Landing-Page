@@ -8,7 +8,7 @@
    
 }
 .JobsSection{
-    padding-top: 5em;
+    padding-top: 4em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,9 +23,10 @@
     color:#07294b;
     margin-top: 1em;
 }
-.JobsSubHeading>span{
+.JobsSubHeading>a{
     color:#92C83E;
     padding: 0.5em;
+    text-decoration: none;
 }
 
 @media (max-width:650px){

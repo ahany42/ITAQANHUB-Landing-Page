@@ -8,13 +8,14 @@
 }
 .AboutUsSection{
     padding-top: 4em;
-    font-size: 1.2em;
+ 
 }
+
 .AboutParagraph{
     margin-top: 2em;
     padding: 1em;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 .AboutParagraph>span{
     color:#92C83E;

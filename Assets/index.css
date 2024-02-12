@@ -13,18 +13,23 @@ hr{
     margin-right: auto;
     margin-top: 2em;
     margin-bottom: 2em;
+    height: 1px;
+    border:none;
+    background-color: gray;
 }
 .Title{
     text-align: center;
     color:#07294b;
-    font-family: "kumbh Sans";
+    font-size: 1.5em;
+    font-weight: 600;
     margin-top: 0em ;
-    
+    text-transform:capitalize;
 }
 .DropUsaLine{
     text-align: center;
     color: #07294b;
     margin-bottom: 1em;
+    font-size: 1em;
 }
 .NavBarContainer{
     width:100%;
@@ -165,7 +170,7 @@ input{
     margin-top: 0.5em;
     margin-bottom: 1em;
     border-color: #07294b;
-    border-width: 3px;
+    border-width: 2px;
     border-style: solid;
     border-radius:1.5em;
     padding-left:1em;
@@ -204,6 +209,7 @@ label>span{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
     
 }
 .SubmitButton:hover{
@@ -266,7 +272,9 @@ margin: 0.5em;
 .ServicesPreviewLine{
     margin:0;
     margin-top: 0.5em;
-    color: #07294b;
+    background-color:#07294b;
+    height: 2px;
+    border:none;
     width: 65%;
 }
 /* Our Services Home Screen Card */
@@ -313,7 +321,7 @@ margin: 0.5em;
   .card1 {
     display: block;
     position: relative;
-    background-color: #f2f8f9;
+    background-color:rgb(222, 234, 243);
     border-radius: 4px;
     padding: 32px 24px;
     margin: 0.5em;
@@ -370,7 +378,9 @@ margin: 0.5em;
     ::placeholder{
         font-size: 0.8em;
     }
-
+    .card1{
+        margin: 0.5em !important;
+    }
 }
 
 
@@ -443,7 +453,7 @@ margin: 0.5em;
     font-size: 0.7em;
 }
 .card1 {
-    margin: 0.5em;
+    margin: 1em;
     margin-top: 1em;
     margin-bottom: 1em;
 }
@@ -469,8 +479,8 @@ margin: 0.5em;
 
     }
     .MobileNavBarActive{
-    display: none;
     flex-direction: column;
+    display:none;
     background-color: #07294b;
     color: white;
     padding: 1em;
