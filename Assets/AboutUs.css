@@ -30,10 +30,36 @@
 #About4thParagraph{
     margin-bottom: 2.5em;
 }
-
+#MobileAbout1stParagraph{
+    margin-top:0.5em;
+}
+#MobileAbout7thParagraph{
+    margin-bottom: 1.5em;
+}
+.MobileAboutParagraph{
+    padding: 0.5em;
+    margin-top: 2em;
+    text-align: justify;
+    font-weight: 400;
+}
+.MobileAboutParagraph>span{
+    color:#92C83E;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.MobileAboutUs{
+    display: none;
+}
 @media (max-width:650px){
     .AboutParagraph{
     font-weight:400 ;
+    }
+    .DesktopAboutUs{
+        display: none;
+    }
+    .MobileAboutUs{
+        display: flex;
+        flex-direction: column;
     }
 }
 @media (max-width:280px){
