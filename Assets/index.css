@@ -227,7 +227,7 @@ label>span{
 .LocationDescription{
     text-align: center;
     color:rgb(46, 44, 44);
-    margin-bottom: 1em;
+    margin-bottom: 0em;
 }
 .LocationSection>iframe{
     width: 100%;
