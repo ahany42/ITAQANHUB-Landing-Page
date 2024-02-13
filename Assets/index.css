@@ -393,7 +393,7 @@ margin: 0.5em;
 }
 @media (min-width:300px) and (max-width:399px){
     .HomePageDescriptionSection{
-        font-size: 0.8em !important;
+        font-size: 1em !important;
         padding: 0.4em !important;
     }
     .card p.small {

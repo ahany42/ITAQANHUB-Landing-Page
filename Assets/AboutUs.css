@@ -7,7 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 .AboutUsSection{
-    padding-top: 4em;
+    padding-top: 5em;
  
 }
 
@@ -16,11 +16,13 @@
     padding: 1em;
     font-weight: 400;
     font-size: 1.2em;
+    text-align: left;
+
 }
 .AboutParagraph>span{
     color:#92C83E;
     font-weight: 600 ;
-    font-size: 1em ;
+    font-size: 1.2em ;
 }
 #About4thParagraph{
     margin-bottom: 2.5em;
@@ -29,5 +31,14 @@
 @media (max-width:650px){
     .AboutParagraph{
     font-weight:400 ;
+    }
+}
+@media (max-width:280px){
+    .AboutParagraph{
+        padding: 0.5em;
+        font-size: 0.9em ;
+    }
+    .AboutParagraph>span{
+        font-size: 1.1em ;
     }
 }
