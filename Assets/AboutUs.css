@@ -64,7 +64,7 @@
 }
 @media (max-width:280px){
     .AboutParagraph{
-        padding: 0.5em;
+        padding: 1em;
         font-size: 0.9em ;
     }
     .AboutParagraph>span{
