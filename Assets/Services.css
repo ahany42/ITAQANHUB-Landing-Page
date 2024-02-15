@@ -6,6 +6,10 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
+hr{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
 .ServicesSection{
     padding-top: 5em;
 }
@@ -13,6 +17,7 @@
     padding: 1em;
     font-weight: 400;
     font-size: 1.2em;
+    margin-top: 1em;
     text-align: justify;
     
 }
@@ -29,17 +34,37 @@
 .MobileServices{
     display:none;
 }
-@media (max-width:650px){
+#LastParagraph{
+    margin-bottom: 3em;
+}
+@media (max-width:768px){
     .DesktopServices{
    display: none;
     }
-    .MobileMainParagraph{
-        display:block;
+    .MobileServices{
+        display:flex; 
+        flex-direction: column; 
+    }
+    .MobileServicesParagraph{
+        padding: 0.5em;
+        margin-top: 2em;
+        text-align: justify;
         font-weight: 400;
-        font-size: 1em;
-       
+    }
+    .MobileServicesParagraph>span{
+        color:#92C83E;
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+    .Title{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    #LastMainMobile,#LastITMobile,#LastMobileService{
+        margin-bottom: 2em !important;
     }
 }
+
 @media (min-width:820px) and (max-width:825px){
     .MainParagraph{
         padding: 1.6em;  
