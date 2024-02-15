@@ -46,7 +46,7 @@ hr{
         flex-direction: column; 
     }
     .MobileServicesParagraph{
-        padding: 0.5em;
+        padding: 1em;
         margin-top: 2em;
         text-align: justify;
         font-weight: 400;

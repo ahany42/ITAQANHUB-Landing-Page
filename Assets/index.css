@@ -195,6 +195,7 @@ label>span{
 .LearnMoreButton{
     text-decoration: none;
     border: none;
+    color:#000;
 }
 .SubmitButton,Button{
     border-style:solid;
@@ -211,7 +212,7 @@ label>span{
     margin-right: auto;
     cursor: pointer;
     background-color:white;
-    color: #000;
+    color: #000 !important;
     
 }
 .SubmitButton:hover{
