@@ -56,7 +56,7 @@ hr{
     display: none;
 }
 .NavBar{
-    width: 30%;
+    width: 40%;
     display:flex;
     justify-content: space-around;
     margin: auto;
@@ -195,6 +195,7 @@ label>span{
 .LearnMoreButton{
     text-decoration: none;
     border: none;
+    color:#000;
 }
 .SubmitButton,Button{
     border-style:solid;
@@ -211,7 +212,7 @@ label>span{
     margin-right: auto;
     cursor: pointer;
     background-color:white;
-    color: #000;
+    color: #000 !important;
     
 }
 .SubmitButton:hover{
@@ -394,12 +395,16 @@ margin: 0.5em;
 }
 @media (min-width:300px) and (max-width:399px){
     .HomePageDescriptionSection{
-        font-size: 1em !important;
-        padding: 0.4em !important;
+        font-size: 0.8em !important;
+        padding: 0.9em !important;
     }
     .card p.small {
         font-size: 12px;
         font-weight: 500;
+    }
+    #LearnMore{
+        margin-top: -1.5em !important;
+       
     }
    
 }
@@ -534,7 +539,7 @@ margin: 0.5em;
 }
 @media (min-width:993px) and (max-width:1800px){
     .NavBar{
-        width:50%;
+        width:55%;
     }
 }
 @media (min-width:820px) and (max-width:825px){

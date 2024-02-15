@@ -7,8 +7,8 @@
     font-family: 'Poppins', sans-serif;
 }
 hr{
-    margin-top: 3em;
-    margin-bottom: 3em;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 .ServicesSection{
     padding-top: 5em;
@@ -34,7 +34,7 @@ hr{
 .MobileServices{
     display:none;
 }
-#LastParagraph{
+#LastParagraph,#LastParagraphIT{
     margin-bottom: 3em;
 }
 @media (max-width:768px){
@@ -46,7 +46,7 @@ hr{
         flex-direction: column; 
     }
     .MobileServicesParagraph{
-        padding: 0.5em;
+        padding: 1em;
         margin-top: 2em;
         text-align: justify;
         font-weight: 400;
@@ -61,7 +61,7 @@ hr{
         margin-right: 1em;
     }
     #LastMainMobile,#LastITMobile,#LastMobileService{
-        margin-bottom: 2em !important;
+        margin-bottom: 3em !important;
     }
 }
 
