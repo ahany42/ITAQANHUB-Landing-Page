@@ -5,7 +5,6 @@
     padding: 0;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
-   
 }
 .JobsSection{
     padding-top: 5em;
@@ -25,10 +24,11 @@
 }
 .JobsSubHeading>a{
     color:#92C83E;
-    padding: 0.5em;
-    text-decoration: none;
+    text-decoration:none;
 }
-
+.NavBardiv{
+    background-color: white;
+}
 @media (max-width:650px){
     .JobsSubHeading{
         font-size: 0.8em;
