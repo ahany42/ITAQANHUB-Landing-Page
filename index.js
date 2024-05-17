@@ -1,55 +1,29 @@
-var HomeNav=document.getElementById("HomeNav");
-var AboutNav=document.getElementById("AboutNav");
-var ServicesNav=document.getElementById("ServicesNav");
-var MobileHomeNav=document.getElementById("MobileHomeNav");
-var MobileAboutNav=document.getElementById("MobileAboutNav");
-var MobileServicesNav=document.getElementById("MobileServicesNav");
 var MenuIcon=document.getElementById("MenuIcon");
 var MobileNavBarActive=document.getElementById("MobileNavBarActive");
+var HomeNav=document.getElementById("HomeNav");
+var MobileHomeNav=document.getElementById("MobileHomeNav");
+var MobileContactNav=document.getElementById("MobileContactNav");
+var ContactNav=document.getElementById("ContactNav");
 var CloseIcon=document.getElementById("CloseIcon");
-var SubmitButton=document.getElementById("SubmitButton");
-HomeNav.addEventListener('click',HomeNavFn);
-MobileHomeNav.addEventListener('click',HomeNavFn);
-AboutNav.addEventListener('click',AboutNavFn);
-MobileAboutNav.addEventListener('click',AboutNavFn);
-ServicesNav.addEventListener('click',ServicesNavFn);
-MobileServicesNav.addEventListener('click',ServicesNavFn);
 MenuIcon.addEventListener('click',MobileNavActiveFn);
 CloseIcon.addEventListener('click',MoileNavInactiveFn);
 window.addEventListener('scroll',MoileNavInactiveFn);
+HomeNav.addEventListener('click',HomeNavFn);
+MobileHomeNav.addEventListener('click',HomeNavFn);
+ContactNav.addEventListener('click',ContactNavFn);
+MobileContactNav.addEventListener('click',ContactNavFn);
+
 function HomeNavFn(){
-    HomeNav.style.textDecoration="underline";
     MobileHomeNav.style.textDecoration="underline";
-    AboutNav.style.textDecoration="none";
-    MobileAboutNav.style.textDecoration="none";
-    ServicesNav.style.textDecoration="none";
-    MobileServicesNav.style.textDecoration="none";
-    MobileNavBarActive.style.display="none";
-    CloseIcon.style.display="none";
-    MenuIcon.style.display="flex";
+    HomeNav.style.textDecoration="underline";
+    MobileContactNav.style.textDecoration="none";
+    ContactNav.style.textDecoration="none";
 }
-function AboutNavFn(){
-    HomeNav.style.textDecoration="none";
+function ContactNavFn(){
     MobileHomeNav.style.textDecoration="none";
-    AboutNav.style.textDecoration="underline";
-    MobileAboutNav.style.textDecoration="underline";
-    ServicesNav.style.textDecoration="none";
-    MobileServicesNav.style.textDecoration="none";
-    MobileNavBarActive.style.display="none";
-    CloseIcon.style.display="none";
-    MenuIcon.style.display="flex";
-}
-function ServicesNavFn(){
     HomeNav.style.textDecoration="none";
-    MobileHomeNav.style.textDecoration="none";
-    AboutNav.style.textDecoration="none";
-    MobileAboutNav.style.textDecoration="none";
-    ServicesNav.style.textDecoration="underline";
-    MobileServicesNav.style.textDecoration="underline";
-    MobileNavBarActive.style.display="none";
-    CloseIcon.style.display="none";
-    MenuIcon.style.display="flex";
-  
+    MobileContactNav.style.textDecoration="underline";
+    ContactNav.style.textDecoration="underline"; 
 }
 function MobileNavActiveFn(){
     MobileNavBarActive.style.display="flex";
