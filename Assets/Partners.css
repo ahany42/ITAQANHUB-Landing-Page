@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+.PartnersDesktop{
+    display: block;
+}
+.PartnersSection{
+    padding-top: 5em;
+}
+.PartnersMainParagraph>h5{
+    margin-top: 2em;
+    padding: 1em;
+    font-weight: 400;
+    font-size: 1.2em;
+    text-align: left;
+}
+.ImgContainer{
+    display: flex;
+    justify-content: center;
+    width:70%;
+    gap:3em;
+}
+.PartnersCardText{
+   margin: auto;
+}
+.PartnersImg{
+    width:20em;
+}
+.PartnersCard{
+   padding: 1em;
+  justify-content: center;
+  display: flex;
+}
+
+@media(max-width:1500px){
+    .ImgContainer{
+        width:80%;
+    }
+}
+@media(max-width:1499px) and (min-width:993px){
+    .ImgContainer{
+        width:95%;
+      
+    }
+}
+@media(max-width:1099px){
+    .PartnersImg{
+        width:15em;
+    }
+}
+@media (max-width:992px){
+    .PartnersDesktop{
+        display: none;
+    }
+}
