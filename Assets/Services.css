@@ -10,9 +10,9 @@ hr{
     margin-top: 1.5em;
     margin-bottom: 2em;
 }
-.ServicesSection{
+ .ServicesSection{
     padding-top: 5em;
-}
+} 
 .DesktopMainParagraph{
     padding: 1em;
     font-weight: 400;
@@ -37,7 +37,7 @@ hr{
 #LastParagraph,#LastParagraphIT{
     margin-bottom: 3em;
 }
-@media (max-width:768px){
+@media (max-width:767px){
     .DesktopServices{
    display: none;
     }

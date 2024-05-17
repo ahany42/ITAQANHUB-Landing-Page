@@ -36,7 +36,30 @@
   justify-content: center;
   display: flex;
 }
+.MobileMainParagraph{
+    padding: 1em;
+    margin-top: 2em;
+    text-align: justify;
+    font-weight: 400;
 
+}
+.MobileMainParagraph>span{
+    color:#92C83E;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.MobilePartnersImg{
+    width:50%;
+    margin: auto;
+}
+.MobilesPartnersCard{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.PartnersMobile{
+    display: none;
+}
 @media(max-width:1500px){
     .ImgContainer{
         width:80%;
@@ -65,5 +88,16 @@
 @media (max-width:992px){
     .PartnersDesktop{
         display: none;
+    }
+    .PartnersMobile{
+        display: block;
+    }
+    hr{
+        width:50%;
+    }
+}
+@media (min-width:767px){
+    .MobileMainParagraph{
+        font-size: 1.17em;
     }
 }
