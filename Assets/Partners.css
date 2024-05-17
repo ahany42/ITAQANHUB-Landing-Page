@@ -48,9 +48,18 @@
       
     }
 }
-@media(max-width:1099px){
+@media(max-width:1270px){
     .PartnersImg{
         width:15em;
+    }
+}
+@media (max-width:1186px){
+    .PartnersImg{
+        width:12em;
+    }
+    .ImgContainer{
+        width:95%;
+        gap:2em;
     }
 }
 @media (max-width:992px){
