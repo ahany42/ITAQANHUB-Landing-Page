@@ -19,23 +19,27 @@
     font-size: 1.2em;
     text-align: left;
 }
-.ImgContainer{
+.PartnersCard{
     display: flex;
     justify-content: center;
-    width:70%;
+    width:100%;
     gap:3em;
+    
+}
+.ImgContainer{
+    width:30%;
+    margin: auto;
+   
 }
 .PartnersCardText{
    margin: auto;
 }
 .PartnersImg{
-    width:20em;
+    width:100%;
+    padding-left: 1em;
+    padding-top: 1em;
 }
-.PartnersCard{
-   padding: 1em;
-  justify-content: center;
-  display: flex;
-}
+
 .MobileMainParagraph{
     padding: 1em;
     margin-top: 2em;
@@ -60,38 +64,47 @@
 .PartnersMobile{
     display: none;
 }
-@media(max-width:1500px){
-    .ImgContainer{
-        width:80%;
-    }
+.DesktopMainParagraph{
+    padding: 1em;
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-top: 1em;
+    text-align: justify;
 }
-@media(max-width:1499px) and (min-width:993px){
-    .ImgContainer{
-        width:95%;
-      
-    }
+.DesktopMainParagraph>span{
+    color:#92C83E;
+    font-weight: 600 ;
+    font-size: 1em ;
 }
-@media(max-width:1270px){
-    .PartnersImg{
-        width:15em;
-    }
+.SecondContainer{
+    padding-top: 5em;
+   
 }
-@media (max-width:1186px){
-    .PartnersImg{
-        width:12em;
-    }
-    .ImgContainer{
-        width:95%;
-        gap:2em;
-    }
+.CertficationDiv{
+    padding-top: 2em;
+   justify-content: center;
+   display: flex;
 }
-@media (max-width:992px){
+.Cerficationsimg{
+    width: 30em;
+}
+h5{
+    padding: 1em;
+    font-weight: 600;
+    font-size: 1em;
+    margin-top: 1em;
+    text-align: center;
+}
+
+@media (max-width:1199px){
     .PartnersDesktop{
         display: none;
     }
     .PartnersMobile{
         display: block;
+     
     }
+ 
     hr{
         width:50%;
     }
@@ -101,6 +114,28 @@
         font-size: 1.17em;
     }
     .MobilePartnersImg{
-        width:35%;
+        width:25% ;
+    }
+}
+@media(min-width:1101px) and (max-width:1799px){
+    .ImgContainer{
+        width:40%;
+       
+    }
+    .PartnersCard{
+        gap:1.5em;
+    }
+}
+@media(min-width:2000px){
+    .ImgContainer{
+        width:20%;
+       
+    }
+    .PartnersCard{
+        gap:5em;
+    }
+    .PartnersImg{
+
+        padding-left: 2em ;
     }
 }
