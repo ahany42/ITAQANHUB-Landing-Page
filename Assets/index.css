@@ -56,7 +56,7 @@ hr{
     display: none;
 }
 .NavBar{
-    width: 40%;
+    width: 50%;
     display:flex;
     justify-content: space-around;
     margin: auto;
@@ -71,7 +71,7 @@ hr{
     text-underline-offset:8px !important;
     color: black;
 }
-#HomeNav:hover,#ServicesNav:hover,#AboutNav:hover,#ContactNav:hover,#JobsNav:hover,#PartnersNav:hover{
+#HomeNav:hover,#ServicesNav:hover,#AboutNav:hover,#ContactNav:hover,#JobsNav:hover,#PartnersNav:hover,#CalendarNav:hover{
 
      text-decoration: underline;
     
@@ -498,7 +498,7 @@ margin: 0.5em;
     padding-bottom: 3em;
     justify-content: space-between;
     z-index: 999;
-    height: 8em;
+    height: 10em;
     font-weight: 400;
     cursor:pointer;
     }
