@@ -5,7 +5,8 @@
     padding: 0;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
-   
+    scrollbar-color:#07294b white ;
+    scrollbar-width: thin;
 }
 hr{
     width:25%;
@@ -50,6 +51,7 @@ hr{
     z-index:999;
     align-items: center;
     background-color: white !important;
+   
  
 }
 .MobileNavBarContainer{
@@ -64,12 +66,13 @@ hr{
     font-size: 1.3em;
     font-weight: 600;
     cursor: pointer;
+   
 }
 .NavBar>a{
     text-decoration:none;
     text-decoration-thickness:4px !important;
     text-underline-offset:8px !important;
-    color: black;
+    color:black;
 }
 #HomeNav:hover,#ServicesNav:hover,#AboutNav:hover,#ContactNav:hover,#JobsNav:hover,#PartnersNav:hover,#CalendarNav:hover{
 
