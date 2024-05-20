@@ -221,7 +221,7 @@ label>span{
 }
 .SubmitButton:hover{
     background-color: #07294b;
-    color: white;
+    color: white !important;
     transition:2s;
 }
 .LocationSection{
