@@ -49,14 +49,14 @@ hr{
     position: fixed;
     z-index:999;
     align-items: center;
-    background-color: white;
+    background-color: white !important;
  
 }
 .MobileNavBarContainer{
     display: none;
 }
 .NavBar{
-    width: 50%;
+    width: 60%;
     display:flex;
     justify-content: space-around;
     margin: auto;
@@ -157,7 +157,7 @@ cursor: pointer;
     margin: auto;
 }
 label{
-    color: #000000;
+    color: black;
     font-weight: 600;
 
     
@@ -171,7 +171,7 @@ input,textarea{
     border-style: solid;
     border-radius:1.5em;
     padding-left:1em;
-    color: #000000;
+    color:black;
     font-weight: 600;
     width: 100%;
   
@@ -179,18 +179,17 @@ input,textarea{
 
 
 textarea{
-    padding-top: 1em;
     height:4em;
+    padding-top: 1em;
 }
+
 input:focus::placeholder {
 color: white;
   } 
- input:focus>label{
-color: aqua;
- }
+ 
 ::placeholder{
     padding-left: 0em;
-    color: #000;
+    color: black;
     font-weight: 600;
 }
 label>span{
@@ -545,15 +544,15 @@ margin: 0.5em;
 }
 @media (min-width:993px) and (max-width:1300px){
     .NavBar{
-        width:70%;
-        font-size: 1.1em;
+        width:75%;
+        font-size: 1em;
         
     }
 }
 @media(min-width:1301px) and (max-width:1800px){
     .NavBar{
-        width:60%;
-        font-size: 1.3em;
+        width:70%;
+        font-size: 1.2em;
         
     }
 }
