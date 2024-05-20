@@ -58,7 +58,7 @@
 .MobilePartnersImg{
     width:50%;
     margin: auto;
-    padding-top: 5em;
+    padding-top: 2em;
 }
 .MobilesPartnersCard{
     justify-content: center;
@@ -99,6 +99,7 @@
 }
 .FortinetImg{
     width:15em;
+    margin-top: 1em;
 }
 #FortinetParagraph{
     margin-bottom: 1em;
