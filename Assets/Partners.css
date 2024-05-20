@@ -31,11 +31,13 @@
     margin: auto;
    
 }
-.PartnersCardText{
-   margin: auto;
+.ImgDiv{
+    display: flex;
+    justify-content: center;
 }
+
 .PartnersImg{
-    width:100%;
+    width:15em;
     padding-left: 1em;
     padding-top: 1em;
 }
@@ -56,6 +58,7 @@
 .MobilePartnersImg{
     width:50%;
     margin: auto;
+    padding-top: 5em;
 }
 .MobilesPartnersCard{
     justify-content: center;
@@ -91,12 +94,15 @@
 }
 h5{
     padding: 1em;
-    font-weight: 600;
-    font-size: 1em;
     margin-top: 1em;
     text-align: center;
 }
-
+.FortinetImg{
+    width:15em;
+}
+#FortinetParagraph{
+    margin-bottom: 1em;
+}
 @media (max-width:1199px){
     .PartnersDesktop{
         display: none;
@@ -105,7 +111,7 @@ h5{
         display: block;
      
     }
- 
+    
     hr{
         width:50%;
     }
