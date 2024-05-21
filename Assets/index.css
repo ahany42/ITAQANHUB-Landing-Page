@@ -473,8 +473,8 @@ margin: 0.5em;
 }
 @media (max-width:992px){
     *{
-        scrollbar-color:#07294b white;
-        scrollbar-width: thin ;
+        scrollbar-color:#07294b white !important;
+        scrollbar-width: thin !important;
     }
     .NavBarContainer{
         display: none;
