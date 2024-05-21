@@ -13,9 +13,9 @@ hr{
     margin-right: auto;
     margin-top: 2em;
     margin-bottom: 2em;
-    height: 1px;
+    height: 2px;
     border:none;
-    background-color: gray;
+    background-color: #07294b;
 }
 .Title{
     text-align: center;
@@ -131,7 +131,7 @@ hr{
 .HomePageDescription>span{
     color:#92C83E;
     font-weight: 600;
-    font-size: 1em;
+    font-size: 1.1em;
 }
 .HomePageDescriptionSection>a{
 color: #07294b;
@@ -210,11 +210,9 @@ label>span{
     height: 3em;
     font-size:1em ;
     font-weight: 600 ;
-    padding:0.5em;
-    margin-top: 1em;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    align-items: center;
+    margin: auto;
     cursor: pointer;
     background-color:white;
     color: #000 !important;
@@ -445,7 +443,7 @@ margin: 0.5em;
     }
     .HomePageDescription>span{
         font-weight:600;
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
      .SubmitButton{
         width: 8em;
@@ -480,8 +478,8 @@ margin: 0.5em;
         width: 5px;
     }
     ::-webkit-scrollbar-thumb{
-        background-color: #07294b;
-        border-radius: thin;
+        background-color: #07294b !important;
+        border-radius: thin !important;
     }
     .NavBarContainer{
         display: none;

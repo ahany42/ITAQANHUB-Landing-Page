@@ -52,8 +52,8 @@
 }
 .MobileMainParagraph>span{
     color:#92C83E;
-    font-size: 1.2em;
     font-weight: 600;
+    font-size: 1.1em;
 }
 .MobilePartnersImg{
     width:50%;
@@ -78,7 +78,7 @@
 .DesktopMainParagraph>span{
     color:#92C83E;
     font-weight: 600 ;
-    font-size: 1em ;
+    font-size: 1.1em ;
 }
 .SecondContainer{
     padding-top: 2em;

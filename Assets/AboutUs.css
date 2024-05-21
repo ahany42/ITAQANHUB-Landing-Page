@@ -15,26 +15,13 @@
     margin-top: 2em;
     padding: 1em;
     font-weight: 400;
-    font-size: 1.2em;
     text-align: left;
 
 }
 .AboutParagraph>span{
     color:#92C83E;
     font-weight: 600 ;
-    font-size: 1.2em ;
-}
-#About1stParagraph{
-    margin-top:0.5em;
-}
-#About4thParagraph{
-    margin-bottom: 2.5em;
-}
-#MobileAbout1stParagraph{
-    margin-top:0.5em;
-}
-#MobileAbout7thParagraph{
-    margin-bottom: 1.5em;
+    font-size: 1.1em ;
 }
 .MobileAboutParagraph{
     padding: 1em;
@@ -45,7 +32,7 @@
 }
 .MobileAboutParagraph>span{
     color:#92C83E;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 600;
 }
 .MobileAboutUs{
@@ -67,8 +54,5 @@
     .AboutParagraph{
         padding: 1em;
         font-size: 0.9em ;
-    }
-    .AboutParagraph>span{
-        font-size: 1.1em ;
     }
 }

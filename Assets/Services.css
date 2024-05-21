@@ -24,7 +24,7 @@ hr{
 .DesktopMainParagraph>span{
     color:#92C83E;
     font-weight: 600 ;
-    font-size: 1em ;
+    font-size: 1.1em ;
     
 }
 .DesktopServiceContainer{
@@ -54,7 +54,7 @@ hr{
     }
     .MobileServicesParagraph>span{
         color:#92C83E;
-        font-size: 1.2em;
+        font-size: 1.1em;
         font-weight: 600;
     }
     .Title{
