@@ -5,8 +5,7 @@
     padding: 0;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
-    scrollbar-color:#07294b white ;
-    scrollbar-width: thin;
+  
 }
 hr{
     width:25%;
@@ -415,6 +414,7 @@ margin: 0.5em;
    
 }
     @media (max-width:650px){
+      
         hr{
             width:70%;
         }
@@ -472,6 +472,10 @@ margin: 0.5em;
 }
 }
 @media (max-width:992px){
+    *{
+        scrollbar-color:#07294b white;
+        scrollbar-width: thin ;
+    }
     .NavBarContainer{
         display: none;
     }
@@ -581,4 +585,11 @@ margin: 0.5em;
         font-size: 1.1em !important;
         padding: 0.2em;
     }
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #07294b;
+    border-radius: thin;
 }
