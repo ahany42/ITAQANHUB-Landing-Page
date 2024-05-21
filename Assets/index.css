@@ -476,6 +476,13 @@ margin: 0.5em;
         scrollbar-color:#07294b white !important;
         scrollbar-width: thin !important;
     }
+    ::-webkit-scrollbar{
+        width: 5px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: #07294b;
+        border-radius: thin;
+    }
     .NavBarContainer{
         display: none;
     }
