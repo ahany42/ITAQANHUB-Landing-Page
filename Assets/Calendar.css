@@ -6,46 +6,35 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
-h4{
+
+h3,h4{
+    text-align: center;
+    color:#07294b;
+}
+a{
+    color:#07294b;
+    font-weight: 600;
     text-align: center;
 }
 .CalendarMain{
     padding-top: 5em;
-    height:73vh;
+
 }
-.CalendarCard{
-    width:450px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 1em;
+.Title{
     margin-bottom: 2em;
-    text-align: center;
-}
-.CalendarContainer{
-    margin-top: 2em;
-}
-.CalendarSubContainer{
-   display: flex;
-   justify-content: space-between;
-  
-}
-.CalendarDetails{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
 }
 .CalendarButton{
-    width:300px;
-    border-radius: 2em;
-    
+    width:100%;
+    border-radius: 2em;   
 }
 .CalendarHeader{
-    background-color:#92C83E;
+    background-color:#07294b;
     height: 2em;
-    color:black;
+   
     text-align: center;
+}
+.CalendarMonth{
+    color:white;
 }
 .CalendarBody{
     height: 3em;
@@ -55,43 +44,101 @@ h4{
 }
 .CalendarDate{
     width:4em;
-    border:1px solid black;
+    border:1px solid #07294b;
     align-items: center;
     margin-bottom: 1em;
+    color:#07294b;
+    margin-right: 1em;
 }
 .card{
-    width:350px;
-}
-.LeftBox{
-    width:20%;
-    background-color:#141414;
-    display:flex;
-    justify-content: center;
+    display: flex;
     align-items: center;
-    color:white;
-}
-.RightBox{
-    width:80%;
-    background-color:#e8dfdf;
     justify-content: center;
+   
+   
+}
+.card1{
     display: flex;
     flex-direction: column;
+    justify-self:center;
+    margin:auto;
+    margin-bottom: 2em;
+    height:300px;
+
+}
+.card1>h1{
     text-align: center;
-    height: 7em;
+    font-size: 1.5em;
 }
-.WorkshopCard{
+.CalendarCardDetails{
     display: flex;
-    width:30em;
+    align-items: center;
 }
-.WorkshopDetails{
+.CalendarLogos>img{
+    width:25em;
+}
+.CalendarLogos{
+    margin: auto;
     display: flex;
-    justify-content: space-evenly;
-    width:50%;
+    justify-content: center;
+    margin-bottom:1em ;
+}
+.CourseDetails{
+    margin-top:1em;
+    display: flex;
+    justify-content: center;
+    
+}
+.CourseTitle{
+    margin: auto;
+    text-align: center;
+}
+.CalendarContainer{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.center{
     margin: auto;
 }
-#white{
-    border-color: white;
+.blur{
+    filter: blur(10px);
+ 
 }
-.atag{
-    text-decoration: underline;
+.FormContainer{
+    display: none;
+    margin-bottom: 15em;
+}
+.FormButtonDiv{
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+} 
+.SubmitButton{
+    margin-right: 2em;
+}
+@media(max-width:650px){
+    .CalendarLogos>img{
+        width:15em;
+    }
+}
+@media (min-width:1023px){
+   
+    .MoreTrainingComingSoonText{
+        margin-top: 3em;
+    }
+    .card1{
+        margin-bottom: 10em;
+    }
+}
+@media(min-width:1900px){
+     
+    .MoreTrainingComingSoonText{
+        margin-top: 3em;
+    }
+    .card1{
+        margin-bottom: 20em;
+    }
 }

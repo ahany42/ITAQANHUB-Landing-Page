@@ -272,7 +272,6 @@ margin: 0.5em;
 .HomeServicesPreview{
     display: flex;
     justify-content: center;
-    display: flex;  
     flex-wrap: wrap;
 }
 .ServicesPreviewLine{
@@ -470,10 +469,6 @@ margin: 0.5em;
 }
 }
 @media (max-width:992px){
-    *{
-        scrollbar-color:#07294b white !important;
-        scrollbar-width: thin !important;
-    }
     ::-webkit-scrollbar{
         width: 5px;
     }
@@ -589,6 +584,12 @@ margin: 0.5em;
     .HomePageDescription{
         font-size: 1.1em !important;
         padding: 0.2em;
+    }
+}
+@media(max-width:650px){
+       *{
+        scrollbar-color:#07294b white !important;
+        scrollbar-width: thin !important;
     }
 }
 ::-webkit-scrollbar{
