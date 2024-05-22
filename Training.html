@@ -13,20 +13,35 @@
 <body>
     <div class="PageContainer">
         <img src="Assets/ItqanHubPrimaryLogo1.png" alt="Itqan Hub Logo">
-    <h2  class="Title" >Course Registration</h2>
+    <h2  class="Title" >Training Registration</h2>
+    <h3>FortiGate Administrator Training</h3>
     <form  class="ContactForm"
-    
     action="https://formspree.io/f/mzbnqrne"
     method="post"
     >
     <label for="Name" >Name <span id="NameAsterik">*</span><br>
         <input type="Text" name="Name" id="Name" placeholder="Your Name Goes Here..."  required>
     </label>
+    <label  for="CandidateTitle">Title <span id="TitleAsterik">*</span><br>
+        <input type="text" name="CandidateTitle" id="CandidateTitle" placeholder="Your Title Goes Here..." required>
+    </label>
     <label  for="email">Email <span id="EmailAsterik">*</span><br>
         <input type="email" name="Email" id="Email"placeholder="Your Email Goes Here..." required>
     </label>
-    <label for="ContactMessage">Message <span>*</span><br>
-        <textarea name="Message" id="ContactMessage" placeholder="Your text Goes Here..." required></textarea>  
+    <label  for="Training">Training <span id="Training">*</span><br>
+        <input type="text" name="Training" id="Training" required value="Fortigate" readonly>
+    </label>
+    <label  for="Country">Country <span id="CountryAsterik">*</span><br>
+        <input type="text" name="Country" id="Country" placeholder="Your Country Goes Here..." required>
+    </label>
+    <label  for="Company">Company <span id="CompanyAsterik">*</span><br>
+        <input type="text" name="Company" id="Company" placeholder="Your Company Goes Here..." required>
+    </label>
+    <label  for="seats#">Number Of Seats <span id="SeatsAsterik">*</span><br>
+        <input type="number" name="seats#" id="seats#" placeholder="Number Of Seats Goes Here..." required>
+    </label>
+    <label for="ContactMessage">Message<br>
+        <textarea name="Message" id="ContactMessage" placeholder="Your text Goes Here..."></textarea>  
     </label>
     
     <button type="submit" class="SubmitButton" id="SubmitButton">Send</button>
