@@ -11,10 +11,10 @@ h3,h4{
     text-align: center;
     color:#07294b;
 }
-a{
+.DownloadPDF{
     color:#07294b;
     font-weight: 600;
-    text-align: center;
+    text-align: center !important;
 }
 .CalendarMain{
     padding-top: 5em;
@@ -30,7 +30,6 @@ a{
 .CalendarHeader{
     background-color:#07294b;
     height: 2em;
-   
     text-align: center;
 }
 .CalendarMonth{
