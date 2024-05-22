@@ -6,8 +6,12 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
+h4{
+    text-align: center;
+}
 .CalendarMain{
     padding-top: 5em;
+    height:73vh;
 }
 .CalendarCard{
     width:450px;
