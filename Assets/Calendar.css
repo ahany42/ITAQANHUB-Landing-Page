@@ -8,11 +8,86 @@
 }
 .CalendarMain{
     padding-top: 5em;
-    height: 78vh;
 }
-h4{
-    text-align: center;
-    color:#07294b;
+.CalendarCard{
+    width:450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 1em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+.CalendarContainer{
+    margin-top: 2em;
+}
+.CalendarSubContainer{
+   display: flex;
+   justify-content: space-between;
+  
+}
+.CalendarDetails{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.CalendarButton{
+    width:300px;
+    border-radius: 2em;
     
+}
+.CalendarHeader{
+    background-color:#92C83E;
+    height: 2em;
+    color:black;
+    text-align: center;
+}
+.CalendarBody{
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.CalendarDate{
+    width:4em;
+    border:1px solid black;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.card{
+    width:350px;
+}
+.LeftBox{
+    width:20%;
+    background-color:#141414;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+.RightBox{
+    width:80%;
+    background-color:#e8dfdf;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 7em;
+}
+.WorkshopCard{
+    display: flex;
+    width:30em;
+}
+.WorkshopDetails{
+    display: flex;
+    justify-content: space-evenly;
+    width:50%;
+    margin: auto;
+}
+#white{
+    border-color: white;
+}
+.atag{
+    text-decoration: underline;
 }
