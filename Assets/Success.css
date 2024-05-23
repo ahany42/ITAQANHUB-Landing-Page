@@ -6,22 +6,25 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
-body{
+
+h1{
+    color:#07294b;
+}
+.SuccessMain{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
-    height: 50vh;
-   
-}
-h1{
-    color:#07294b;
-}
-.SuccessMain{
-    width:600px;
-    height:400px;
+    margin-left: 1em ;
+    margin-right: 1em;
+    margin-top: 5em;
 }
 .Second{
     color:#92C83E;
+}
+@media (max-width:650px){
+    .Second{
+        font-size:1.2em;
+    }
 }
