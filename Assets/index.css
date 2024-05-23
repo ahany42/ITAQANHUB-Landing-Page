@@ -138,7 +138,7 @@ color: #07294b;
 text-decoration: none;
 cursor: pointer;
 }
-.DestktopsDescriptionContainer{
+.DesktopsDescriptionContainer{
     width:fit-content;
     height:5em;
     margin: auto;
@@ -523,7 +523,7 @@ margin: 0.5em;
     .Slogan>span{
         font-weight: 600;
     }
-    .DestktopsDescriptionContainer{
+    .DesktopsDescriptionContainer{
         display: none;
     }
     .MobileDescriptionContainer{

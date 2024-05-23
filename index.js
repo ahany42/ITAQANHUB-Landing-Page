@@ -6,8 +6,8 @@ var MobileContactNav=document.getElementById("MobileContactNav");
 var ContactNav=document.getElementById("ContactNav");
 var CloseIcon=document.getElementById("CloseIcon");
 MenuIcon.addEventListener('click',MobileNavActiveFn);
-CloseIcon.addEventListener('click',MoileNavInactiveFn);
-window.addEventListener('scroll',MoileNavInactiveFn);
+CloseIcon.addEventListener('click',MobileNavInactiveFn);
+window.addEventListener('scroll',MobileNavInactiveFn);
 HomeNav.addEventListener('click',HomeNavFn);
 MobileHomeNav.addEventListener('click',HomeNavFn);
 ContactNav.addEventListener('click',ContactNavFn);
@@ -31,7 +31,7 @@ function MobileNavActiveFn(){
     MenuIcon.style.display="none";
    
 }
-function MoileNavInactiveFn(){
+function MobileNavInactiveFn(){
     MobileNavBarActive.style.display="none";
     CloseIcon.style.display="none";
     MenuIcon.style.display="flex";
