@@ -7,21 +7,14 @@
     font-family: 'Poppins', sans-serif;
 }
 .PageContainer{
-    margin-top: 3em;
-    margin-bottom: 3em;
+    padding-top: 4em;
+    padding-bottom: 4em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     
-}
-.PageContainer>img{
-    width:50%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-  
 }
 .PageContainer>h3{
     text-align: center;

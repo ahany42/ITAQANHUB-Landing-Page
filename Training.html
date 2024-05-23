@@ -3,16 +3,51 @@
     <head>
         <meta charset="UTF-8"/>
         <title>ItqanHub</title>
-    <link rel="stylesheet" href="Assets/index.css">
-    <link rel="stylesheet" href="Assets/Training.css">
+        <link rel="stylesheet" href="Assets/Training.css">
+        <link rel="stylesheet" href="Assets/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="Assets/favicon.ico">
 
       
 </head>
 <body>
+    <div class="NavBardiv">
+        <img class="NavLogo"src="Assets/ItqanHubEmblem1.png" alt="Navigation Bar Logo">
+    <div class="NavBarContainer">
+    <div class="NavBar">
+        <a id="HomeNav" href="index.html" >Home</a>
+        <a id="AboutNav" href="AboutUs.html">About Us</a>
+        <a id="ServicesNav" href="Services.html">Our Services</a>
+        <a id="PartnersNav" href="Partners.html">Our Partners</a>
+        <a id="CalendarNav" href="Calendar.html">Schedule</a>
+        <a id="ContactNav" href="index.html#ContactUs">Contact Us</a>
+        <a id="JobsNav" href="Jobs.html">Jobs</a>
+       
+    </div>
+</div>
+</div>
+<div class="MobileNavBarContainer">
+    <div class="MobileNavBar">
+        <a href="index.html">
+            <img class="NavLogo"src="Assets/ItqanHubEmblem1.png" alt="Navigation Bar Logo">
+        </a>
+    <i id="MenuIcon" class="fa-solid fa-bars"></i>
+    <i id="CloseIcon" class="fa-solid fa-x"></i>
+</div>
+<div id="MobileNavBarActive" class="MobileNavBarActive" >
+    <a id="MobileHomeNav" href="index.html" >Home</a>
+    <a id="MobileAboutNav" href="AboutUs.html">About Us</a>
+    <a id="MobileServicesNav" href="Services.html">Our Services</a>
+    <a id="MobilePartnersNav" href="Partners.html">Our Partners</a>
+    <a id="MobileCalendarNav" href="Calendar.html">Schedule</a>
+    <a id="MobileContactNav" href="index.html#ContactUs">Contact Us</a>
+    <a id="MobileJobsNav" href="Jobs.html">Jobs</a>
+ 
+</div>
+</div>
     <div class="PageContainer">
-        <img src="Assets/ItqanHubPrimaryLogo1.png" alt="Itqan Hub Logo">
+    
+        <!-- <img src="Assets/ItqanHubPrimaryLogo1.png" alt="Itqan Hub Logo"> -->
     <h2  class="Title" >Training Registration</h2>
     <h3>FortiGate Administrator Training</h3>
     <form  class="ContactForm"
@@ -22,14 +57,14 @@
     <label for="Name" >Name <span id="NameAsterik">*</span><br>
         <input type="Text" name="Name" id="Name" placeholder="Your Name Goes Here..."  required>
     </label>
-    <label  for="CandidateTitle">Title <span id="TitleAsterik">*</span><br>
+    <label  for="CandidateTitle">Job Title <span id="TitleAsterik">*</span><br>
         <input type="text" name="CandidateTitle" id="CandidateTitle" placeholder="Your Title Goes Here..." required>
     </label>
     <label  for="email">Email <span id="EmailAsterik">*</span><br>
         <input type="email" name="Email" id="Email"placeholder="Your Email Goes Here..." required>
     </label>
     <label  for="Training">Training <span id="Training">*</span><br>
-        <input type="text" name="Training" id="Training" required value="Fortigate" readonly>
+        <input type="text" name="Training" id="Training" required value="Fortigate Administrator 23/6/2024 " readonly>
     </label>
     <label  for="Country">Country <span id="CountryAsterik">*</span><br>
         <input type="text" name="Country" id="Country" placeholder="Your Country Goes Here..." required>
@@ -49,5 +84,20 @@
 </div>
 </form>
 </div>
+<section class="FooterSection">
+    <div class="SocialLinks">
+        <a href="https://www.facebook.com/ItqanHub/">
+            <i class="fab fa-facebook"></i>
+        </a>
+      
+        <a href="https://www.linkedin.com/company/itqan-hub/">
+            <i class="fab fa-linkedin"></i>
+        </a>
+       
+    </div>
+    <img class="FooterLogo" src="Assets/ItqanHubSecondaryLogo3.png" alt="Footer Logo">
+    <h5 class="CopyRightsText">COPYRIGHT &copy; 2024 ITQANHUB.COM-ALL RIGHTS RESERVED</h5>
+</section>
 </body>
+<script src="index.js"></script>
 </html>
