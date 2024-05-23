@@ -6,8 +6,7 @@ if(empty($Name) || empty($Email) || empty($Message)){
 echo"Fill all fields";
 }
 else{
-
-
+  //Testing DB String
 $conn = new mysqli('localhost', 'root', '', 'testitqan');
 if ($conn->connect_error) {
   die('Connection Failed: ' . $conn->connect_error);
