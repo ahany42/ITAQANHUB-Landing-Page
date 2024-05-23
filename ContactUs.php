@@ -2,7 +2,7 @@
 $Name = $_POST['Name'];
 $Email = $_POST['Email'];
 $Message = $_POST['Message'];
-if(empty($Name) && empty($Email) && empty($Message)){
+if(empty($Name) || empty($Email) || empty($Message)){
 echo"Fill all fields";
 }
 else{

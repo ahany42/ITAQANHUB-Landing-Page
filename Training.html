@@ -48,12 +48,13 @@
 </div>
     <div class="PageContainer">
     
-        <!-- <img src="Assets/ItqanHubPrimaryLogo1.png" alt="Itqan Hub Logo"> -->
+        <!-- action="https://formspree.io/f/mzbnqrne" -->
     <h2  class="Title" >Training Registration</h2>
     <h3>FortiGate Administrator Training</h3>
     <form  class="ContactForm"
-    action="https://formspree.io/f/mzbnqrne"
+    action="https://formspree.io/f/xgegajnj"
     method="post"
+    id="TrainingForm"
     >
     <label for="Name" >Full Name <span id="NameAsterik">*</span><br>
         <input type="Text" name="Name" id="Name" placeholder="Your Name Goes Here..."  required>
@@ -76,8 +77,8 @@
     <label  for="Company">Company <span id="CompanyAsterik">*</span><br>
         <input type="text" name="Company" id="Company" placeholder="Your Company Goes Here..." required>
     </label>
-    <label  for="seats#">Number Of Seats <span id="SeatsAsterik">*</span><br>
-        <input type="number" name="seats#" id="seats#" placeholder="No. Of Seats Goes Here..." required>
+    <label  for="NumberOfSeats">Number Of Seats <span id="SeatsAsterik">*</span><br>
+        <input type="number" name="NumberOfSeats" id="NumberOfSeats" placeholder="No. Of Seats Goes Here..." required>
     </label>
     <label for="ContactMessage">Message<br>
         <textarea name="Message" id="ContactMessage" placeholder="Your text Goes Here..."></textarea>  
@@ -104,4 +105,40 @@
 </section>
 </body>
 <script src="index.js"></script>
+<script>
+document.getElementById('TrainingForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    const formData = new FormData(this);
+    fetch('Trainings.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+
+
+        fetch(this.action, {
+            method: this.method,
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                window.location.href = 'Success.html';
+            } else {
+               
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('There was an error sending your message. Please try again later.');
+    });
+});
+</script>
 </html>
