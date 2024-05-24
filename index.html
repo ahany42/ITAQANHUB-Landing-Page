@@ -104,9 +104,8 @@
     <h2  class="Title" >Contact Us</h2>
     <h4 class="DropUsaLine">Drop Us A Line!</h4>
         <!-- formspree testing account -->
+        <!-- action="https://formspree.io/f/xqkrpjbp" -->
     <form  class="ContactForm" id="ContactUsForm"
-    
-    action="https://formspree.io/f/xqkrpjbp"
   method="post"
 >
 <label for="Name" >Name <span id="NameAsterik">*</span><br>
@@ -156,38 +155,60 @@ window.onbeforeunload = () => {
 
 
 document.getElementById('ContactUsForm').addEventListener('submit', function(event) {
-            event.preventDefault(); 
-            const formData = new FormData(this);
-            fetch('ContactUs.php', {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => response.text())
-            .then(data => {
+        //     event.preventDefault(); 
+        //     const formData = new FormData(this);
+        //     fetch('ContactUs.php', {
+        //         method: 'POST',
+        //         body: formData
+        //     })
+        //     .then(response => response.text())
+        //     .then(data => {
 
 
-                fetch(this.action, {
-                    method: this.method,
-                    body: formData,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                })
-                .then(response => {
-                    if (response.ok) {
-                        window.location.href = 'Success.html';
-                    } else {
+        //         fetch(this.action, {
+        //             method: this.method,
+        //             body: formData,
+        //             headers: {
+        //                 'Accept': 'application/json'
+        //             }
+        //         })
+        //         .then(response => {
+        //             if (response.ok) {
+        //                 window.location.href = 'Success.html';
+        //             } else {
                        
-                    }
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                });
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert('There was an error sending your message. Please try again later.');
-            });
-        });
+        //             }
+        //         })
+        //         .catch(error => {
+        //             console.error('Error:', error);
+        //         });
+        //     })
+        //     .catch(error => {
+        //         console.error('Error:', error);
+        //         alert('There was an error sending your message. Please try again later.');
+        //     });
+     
+        //production
+event.preventDefault(); 
+const formData = new FormData(this);
+
+fetch('https://formspree.io/meqygzln', {  
+    method: 'POST',
+    body: formData,
+    headers: {
+        'Accept': 'application/json'
+    }
+})
+.then(response => {
+    if (response.ok) {
+        window.location.href = 'Success.html';
+    } else {
+    }
+})
+.catch(error => {
+    console.error('Error:', error);
+    alert('There was an error sending your message. Please try again later.');
+});
+});
 </script> 
 </html>
