@@ -8,6 +8,8 @@ $Country=$_POST['Country'];
 $Company=$_POST['Company'];
 $NumberOfSeats=$_POST['NumberOfSeats'];
 $Message = $_POST['Message'];
+$Place="Office";
+$TrainingVersion=$_POST['TrainingDate'];
 if(empty($Name) || empty($Email) ||empty($MobileNumber)||empty($Training)||empty($Company)||empty($Country)||empty($NumberOfSeats)){
     echo"Fill all fields";
     }
@@ -19,8 +21,8 @@ if(empty($Name) || empty($Email) ||empty($MobileNumber)||empty($Training)||empty
           echo"Connection Error";
         
         } else {
-          $stmt = $conn->prepare("insert into Training(Name, Email,JobTitle,Mobile,Training,Country,Company,NumberOfSeats,Message, TimeStamp) values(?, ?, ?, ?, ?, ?,?, ?,?,NOW())");
-          $stmt->bind_param("sssssssis", $Name, $Email,$CandidateTitle,$MobileNumber,$Training,$Country,$Company,$NumberOfSeats, $Message);
+          $stmt = $conn->prepare("insert into Training(Name, Email,JobTitle,Mobile,TrainingName,TrainingPlace,TrainingVersion,Country,Company,NumberOfSeats,Message, TimeStamp) values(?, ?, ?, ?, ?, ?,?,?, ?,?,?,NOW())");
+          $stmt->bind_param("sssssssssis", $Name, $Email,$CandidateTitle,$MobileNumber,$Training,$Place,$TrainingVersion,$Country,$Company,$NumberOfSeats, $Message);
           if ($stmt->execute()) {
             header('Location:Success.html');
           } else {

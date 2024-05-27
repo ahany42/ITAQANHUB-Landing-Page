@@ -8,12 +8,13 @@ echo"Fill all fields";
 else{
   //Testing DB String
 $conn = new mysqli('localhost', 'root', '', 'testitqan');
+$conn->query("SET time_zone = '+02:00'");
 if ($conn->connect_error) {
   die('Connection Failed: ' . $conn->connect_error);
   echo"Connection Error";
 
 } else {
-  $stmt = $conn->prepare("insert into contactus(Name, Email, Message, TimeStamp) values(?, ?, ?, NOW())");
+  $stmt = $conn->prepare("insert into ContactUs(Name, Email, Message, TimeStamp) values(?, ?, ?, NOW())");
   $stmt->bind_param("sss", $Name, $Email, $Message);
   if ($stmt->execute()) {
     header('Location:Success.html');
