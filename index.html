@@ -155,11 +155,11 @@ window.onbeforeunload = () => {
 
 
 document.getElementById('ContactUsForm').addEventListener('submit', function(event) {
-        //     event.preventDefault(); 
-        //     const formData = new FormData(this);
-        //     fetch('ContactUs.php', {
+        //   event.preventDefault(); 
+        //   const formData = new FormData(this);
+        //  fetch('ContactUs.php', {
         //         method: 'POST',
-        //         body: formData
+        //        body: formData
         //     })
         //     .then(response => response.text())
         //     .then(data => {
@@ -172,19 +172,21 @@ document.getElementById('ContactUsForm').addEventListener('submit', function(eve
         //                 'Accept': 'application/json'
         //             }
         //         })
-        //         .then(response => {
-        //             if (response.ok) {
+        //         .then(response => response.json())
+        //             .then(data => {
+        //             if (data.success) {
         //                 window.location.href = 'Success.html';
         //             } else {
                        
-        //             }
-        //         })
-        //         .catch(error => {
-        //             console.error('Error:', error);
+        //          }
+        //          })
+        //         .catch(error => {          
+        //              console.error('Error:', error);
+        //         alert('There was an error sending your message. Please try again later.');
         //         });
         //     })
-        //     .catch(error => {
-        //         console.error('Error:', error);
+        //   .catch(error => {
+        //        console.error('Error:', error);
         //         alert('There was an error sending your message. Please try again later.');
         //     });
      
@@ -199,12 +201,14 @@ fetch('https://formspree.io/meqygzln', {
         'Accept': 'application/json'
     }
 })
-.then(response => {
-    if (response.ok) {
-        window.location.href = 'Success.html';
-    } else {
-    }
-})
+.then(response => response.json())
+                    .then(data => {
+                    if (data.success) {
+                        window.location.href = 'Success.html';
+                    } else {
+                       
+                 }
+                 })
 .catch(error => {
     console.error('Error:', error);
     alert('There was an error sending your message. Please try again later.');

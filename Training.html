@@ -50,7 +50,6 @@
     
         <!-- action="https://formspree.io/f/mzbnqrne" -->
     <h2  class="Title" >Training Registration</h2>
-    <h3>FortiGate Administrator Training</h3>
         <!-- formspree testing account -->
         <!-- action="https://formspree.io/f/xgegajnj" -->
     <form  class="ContactForm"
@@ -69,8 +68,11 @@
     <label  for="MobileNumber">Mobile Number <span id="MobileNumberAsterik">*</span><br>
         <input type="text" name="MobileNumber" id="MobileNumber"placeholder="Your Mobile Number Goes Here..." required>
     </label>
-    <label  for="Training">Training <span id="Training">*</span><br>
-        <input type="text" name="Training" id="Training" required value="Fortigate Administrator 23-25 June " readonly>
+    <label  for="Training">Training <span id="TrainingAsterik">*</span><br>
+        <input type="text" name="Training" id="Training" required value="" readonly>
+    </label>
+    <label  for="TrainingDate">Training Date <span id="TrainingDateAsterik">*</span><br>
+        <input type="text" name="TrainingDate" id="TrainingDate" required value="" readonly>
     </label>
     <label  for="Country">Country <span id="CountryAsterik">*</span><br>
         <input type="text" name="Country" id="Country" placeholder="Your Country Goes Here..." required>
@@ -125,8 +127,9 @@ document.getElementById('TrainingForm').addEventListener('submit', function(even
     //             'Accept': 'application/json'
     //         }
     //     })
-    //     .then(response => {
-    //         if (response.ok) {
+    //     .then(response => response.json())
+    //                 .then(data => {
+    //                 if (data.success) {
     //             window.location.href = 'Success.html';
     //         } else {
                
@@ -152,12 +155,14 @@ fetch('https://formspree.io/mzbnqrne', {
         'Accept': 'application/json'
     }
 })
-.then(response => {
-    if (response.ok) {
-        window.location.href = 'Success.html';
-    } else {
-    }
-})
+.then(response => response.json())
+                    .then(data => {
+                    if (data.success) {
+                        window.location.href = 'Success.html';
+                    } else {
+                       
+                 }
+                 })
 .catch(error => {
     console.error('Error:', error);
     alert('There was an error sending your message. Please try again later.');
@@ -165,4 +170,5 @@ fetch('https://formspree.io/mzbnqrne', {
 });
 
 </script>
+<script src="Training.js"></script>
 </html>

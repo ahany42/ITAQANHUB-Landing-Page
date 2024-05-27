@@ -97,6 +97,7 @@ h3,h4{
     justify-content: center;
     margin: auto;
     flex-wrap: wrap;
+    gap:5em;
 }
 .center{
     margin: auto;
@@ -128,16 +129,11 @@ h3,h4{
     .MoreTrainingComingSoonText{
         margin-top: 3em;
     }
-    .card1{
-        margin-bottom: 10em;
-    }
 }
 @media(min-width:1900px){
      
     .MoreTrainingComingSoonText{
         margin-top: 3em;
     }
-    .card1{
-        margin-bottom: 20em;
-    }
+   
 }
