@@ -1,5 +1,3 @@
-
-
 function getCourseDetails() {
     return window.location.hash.substring(1);
 }
