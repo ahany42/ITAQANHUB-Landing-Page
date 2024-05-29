@@ -12,11 +12,6 @@ const courseDate = parts[1];
 TrainingDate.value = decodeURIComponent(courseDate);
 }
 var currentDate=new Date();
-//26/6/2024
-var Training1Date = new Date(currentDate.getFullYear(),5, 26);
-if(currentDate>Training1Date){
-    document.getElementById("June").style.display="none";
-}
 //31/7/2024
 var Training2Date = new Date(currentDate.getFullYear(),6, 31);
 if(currentDate>Training2Date){
