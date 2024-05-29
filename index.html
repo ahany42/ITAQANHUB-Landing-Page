@@ -112,8 +112,14 @@
 <label for="Name" >Name <span id="NameAsterik">*</span><br>
     <input type="Text" name="Name" id="Name" placeholder="Your Name Goes Here..."  required>
 </label>
+<label  for="MobileNumber">Mobile Number <span id="MobileNumberAsterik">*</span><br>
+        <input type="text" name="MobileNumber" id="MobileNumber"placeholder="Your Mobile Number Goes Here..." required>
+    </label>
 <label  for="email">Email <span id="EmailAsterik">*</span><br>
 <input type="email" name="Email" id="Email"placeholder="Your Email Goes Here..." required>
+</label>
+<label  for="Company">Company <span id="CompanyAsterik">*</span><br>
+    <input type="text" name="Company" id="Company" placeholder="Your Company Goes Here..." required>
 </label>
 <label for="ContactMessage">Message <span>*</span><br>
 <textarea name="Message" id="ContactMessage" placeholder="Your text Goes Here..." required></textarea>  
@@ -165,8 +171,8 @@ document.getElementById('ContactUsForm').addEventListener('submit', function(eve
             .then(response => response.text())
             .then(data => {
 
-                // fetch('https://formspree.io/meqygzln', {
-                fetch('', {
+                fetch('https://formspree.io/xqkrpjbp', {
+                // fetch('', {
                     method: 'POST',
                     body: formData,
                     headers: {
