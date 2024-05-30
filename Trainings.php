@@ -22,7 +22,7 @@ if(empty($Name) || empty($Email) ||empty($MobileNumber)||empty($Training)||empty
         
         } else {
           $conn->query("SET time_zone = '+02:00'");
-          $stmt = $conn->prepare("insert into Training(Name, Email,JobTitle,Mobile,TrainingName,TrainingPlace,TrainingVersion,Country,Company,NumberOfSeats,Message, TimeStamp) values(?, ?, ?, ?, ?, ?,?,?, ?,?,?,NOW())");
+          $stmt = $conn->prepare("insert into TrainingRegistrations(Name, Email,JobTitle,Mobile,TrainingName,TrainingPlace,TrainingVersion,Country,Company,NumberOfSeats,Message, TimeStamp) values(?, ?, ?, ?, ?, ?,?,?, ?,?,?,NOW())");
           $stmt->bind_param("sssssssssis", $Name, $Email,$CandidateTitle,$MobileNumber,$Training,$Place,$TrainingVersion,$Country,$Company,$NumberOfSeats, $Message);
           if ($stmt->execute()) {
             header('Location:Success.html');

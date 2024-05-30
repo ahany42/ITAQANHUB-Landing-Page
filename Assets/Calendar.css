@@ -18,7 +18,7 @@ h3,h4{
 }
 .CalendarMain{
     padding-top: 5em;
-
+    min-height: 80vh;
 }
 .Title{
     margin-bottom: 2em;
@@ -34,20 +34,32 @@ h3,h4{
 }
 .CalendarMonth{
     color:white;
+   text-align: center;
+   margin: auto;
 }
 .CalendarBody{
     height: 3em;
     display: flex;
     align-items: center;
     justify-content: center;
+   
+}
+.TimeandPlace{
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+   
 }
 .CalendarDate{
-    width:4em;
+    width:5em;
     border:1px solid #07294b;
     align-items: center;
     margin-bottom: 1em;
     color:#07294b;
     margin-right: 1em;
+    
 }
 .card{
     display: flex;
@@ -97,7 +109,11 @@ h3,h4{
     justify-content: center;
     margin: auto;
     flex-wrap: wrap;
-    gap:5em;
+    gap:4em;
+  
+}
+.Time{
+    text-align: center;
 }
 .center{
     margin: auto;
