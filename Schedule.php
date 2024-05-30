@@ -145,7 +145,10 @@ $result = $conn->query($sql);
         echo "</div>";
       
     } else {
-        echo "No courses found.";
+        echo "<div>";
+        echo "<h2>"."We will add our Schedule soon"."</h2>";
+        echo "<h2 class=Greenh2>"."Stay tuned!"."</h2>";
+        echo "</div>";
     }
     echo "</section>";
     $conn->close();

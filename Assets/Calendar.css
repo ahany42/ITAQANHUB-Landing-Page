@@ -7,9 +7,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
-h3,h4{
+h2,h3,h4{
     text-align: center;
     color:#07294b;
+}
+.Greenh2{
+    color:#92C83E;
 }
 .DownloadPDF{
     color:#07294b;
