@@ -12,7 +12,7 @@ if ($conn->connect_error) {
 
 $conn->query("SET time_zone = '+02:00'");
 
-$sql = "SELECT * FROM courses where EndDate > CURDATE() and Visible=1" ;
+$sql = "SELECT * FROM courses where EndDate > CURDATE() and Visible=1 ORDER BY StartDate ASC;" ;
 $result = $conn->query($sql);
 ?>
 
@@ -97,11 +97,11 @@ $result = $conn->query($sql);
             echo "<div class=CalendarHeader>";
             if($startMonth===$endMonth){
 
-                echo "<h4 class=CalendarMonth>" . htmlspecialchars($startMonth) . "</h4>";
+                echo "<h4 class=CalendarMonth>" .strtoupper( htmlspecialchars($startMonth)) . "</h4>";
                 
             }
             else {
-                echo "<h4 class=CalendarMonth>" . htmlspecialchars($startMonth) ."-". htmlspecialchars($endMonth) . "</h4>";
+                echo "<h4 class=CalendarMonth>" . strtoupper(htmlspecialchars($startMonth)) ."-". strtoupper(htmlspecialchars($endMonth)) . "</h4>";
             }
             echo "</div>";
             echo "<div class=CalendarBody>";
