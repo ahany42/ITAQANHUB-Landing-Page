@@ -411,7 +411,9 @@ margin: 0.5em;
    
 }
     @media (max-width:650px){
-      
+        .ContactForm{
+            width:65%  !important;
+        }
         hr{
             width:70%;
         }
@@ -468,6 +470,7 @@ margin: 0.5em;
     margin-bottom: 1em;
 }
 }
+
 @media (max-width:992px){
     ::-webkit-scrollbar{
         width: 5px;

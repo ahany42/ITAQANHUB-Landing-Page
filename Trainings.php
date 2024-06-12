@@ -8,7 +8,6 @@ $Country=$_POST['Country'];
 $Company=$_POST['Company'];
 $NumberOfSeats=$_POST['NumberOfSeats'];
 $Message = $_POST['Message'];
-$Place="Office";
 $TrainingVersion=$_POST['TrainingDate'];
 if(empty($Name) || empty($Email) ||empty($MobileNumber)||empty($Training)||empty($Company)||empty($Country)||empty($NumberOfSeats)){
     echo"Fill all fields";
@@ -22,15 +21,15 @@ if(empty($Name) || empty($Email) ||empty($MobileNumber)||empty($Training)||empty
         
         } else {
           $conn->query("SET time_zone = '+02:00'");
-          $stmt = $conn->prepare("insert into TrainingRegistrations(Name, Email,JobTitle,Mobile,TrainingName,TrainingPlace,TrainingVersion,Country,Company,NumberOfSeats,Message, TimeStamp) values(?, ?, ?, ?, ?, ?,?,?, ?,?,?,NOW())");
-          $stmt->bind_param("sssssssssis", $Name, $Email,$CandidateTitle,$MobileNumber,$Training,$Place,$TrainingVersion,$Country,$Company,$NumberOfSeats, $Message);
+          $stmt = $conn->prepare("insert into TrainingRegistrations(Name, Email,JobTitle,Mobile,TrainingName,TrainingPlace,TrainingVersion,Country,Company,NumberOfSeats,Message, TimeStamp) values( ?, ?, ?, ?, ?,?,?, ?,?,?,NOW())");
+          $stmt->bind_param("ssssssssis", $Name, $Email,$CandidateTitle,$MobileNumber,$Training,$TrainingVersion,$Country,$Company,$NumberOfSeats, $Message);
           if ($stmt->execute()) {
             header('Location:Success.html');
           } else {
             echo "Error sending message: " . $stmt->error;
           }
-          $stmt->close();
           $conn->close();
+          $stmt->close();
         }
         }
 ?>
