@@ -30,6 +30,10 @@ h2,h3,h4{
     width:100%;
     border-radius: 2em;   
 }
+.CalendarButton:hover{
+    background-color: white;
+    color:black !important;
+}
 .CalendarHeader{
     background-color:#07294b;
     height: 2em;
