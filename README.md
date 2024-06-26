@@ -1,4 +1,4 @@
-<h1 align="center">"ITQAN HUB" Front-end Landing Page </h1>
+<h1 align="center">"ITQAN HUB"Landing Page </h1>
 <h4 align="center">Itqan Hub Front-end Landing Page Using Html,CSS & Js in addition to PHP and MySQL For inserting Records to Database</h4>
 <br><br><br>
 <div align="center">
